@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
     <title>Haku</title>
-    <updated>2020-03-14T15:40:16.424Z</updated>
+    <updated>2020-03-14T15:43:29.880Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Haku</rights>
     <entry>
-        <title type="html"><![CDATA[【杂志】Kerrang / September 2019 / Green Day The Secrets Out ...]]></title>
+        <title type="html"><![CDATA[【杂志】Kerrang / September 2019 / Green Day The Secrets Out]]></title>
         <id>https://hakuhuang.github.io/post/kerrang-september-2019-green-day-the-secrets-out/</id>
         <link href="https://hakuhuang.github.io/post/kerrang-september-2019-green-day-the-secrets-out/">
         </link>
