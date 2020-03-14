@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-14T11:55:59.422Z</updated>
+    <title>断音律</title>
+    <updated>2020-03-14T11:58:53.643Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>Life&apos;s endless corridors</subtitle>
     <logo>https://hakuhuang.github.io/images/avatar.png</logo>
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 断音律</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://hakuhuang.github.io/post/hello-gridea/</id>
