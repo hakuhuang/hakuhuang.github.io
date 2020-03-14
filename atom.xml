@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
-    <title>断音律</title>
-    <updated>2020-03-14T15:17:05.924Z</updated>
+    <title>Haku</title>
+    <updated>2020-03-14T15:21:50.727Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
     <subtitle>Life&apos;s endless corridors</subtitle>
     <logo>https://hakuhuang.github.io/images/avatar.png</logo>
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 断音律</rights>
+    <rights>All rights reserved 2020, Haku</rights>
     <entry>
         <title type="html"><![CDATA[【杂志】The Big Issue November 2019 - The First Noel]]></title>
         <id>https://hakuhuang.github.io/post/the-big-issue-november-2019/</id>
