@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
     <title>断音律</title>
-    <updated>2020-03-14T12:13:41.182Z</updated>
+    <updated>2020-03-14T12:22:12.505Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://hakuhuang.github.io/images/avatar.png</logo>
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 断音律</rights>
+    <entry>
+        <title type="html"><![CDATA[【PDF杂志+图片下载】The Big Issue - November 2019]]></title>
+        <id>https://hakuhuang.github.io/post/pdf-za-zhi-tu-pian-xia-zai-the-big-issue-november-2019/</id>
+        <link href="https://hakuhuang.github.io/post/pdf-za-zhi-tu-pian-xia-zai-the-big-issue-november-2019/">
+        </link>
+        <updated>2020-03-14T12:18:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>链接：https://pan.baidu.com/s/1ebnWHxjegW7nunYJzxAYwg<br>
+提取码：j18d</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>链接：https://pan.baidu.com/s/1ebnWHxjegW7nunYJzxAYwg<br>
+提取码：j18d</p>
+<!-- more -->
+<p><img src="https://hakuhuang.github.io/post-images/1584188430208.jpg" alt="" loading="lazy"><br>
+<img src="https://hakuhuang.github.io/post-images/1584188444050.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://hakuhuang.github.io/post/hello-gridea/</id>
