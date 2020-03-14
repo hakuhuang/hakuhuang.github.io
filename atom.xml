@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
     <title>断音律</title>
-    <updated>2020-03-14T13:00:27.028Z</updated>
+    <updated>2020-03-14T13:09:49.953Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 断音律</rights>
     <entry>
-        <title type="html"><![CDATA[【PDF杂志+图片下载】The Big Issue - November 2019]]></title>
+        <title type="html"><![CDATA[【杂志】The Big Issue November 2019 - The First Big Noel]]></title>
         <id>https://hakuhuang.github.io/post/the-big-issue-november-2019/</id>
         <link href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
         </link>
