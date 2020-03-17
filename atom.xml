@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
-    <title>Haku</title>
-    <updated>2020-03-17T14:22:07.180Z</updated>
+    <title>Life&apos;s Endless Corridors</title>
+    <updated>2020-03-17T16:15:13.899Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
-    <subtitle>Life&apos;s Endless Corridors</subtitle>
+    <subtitle>Hardcore NG fan since 2016</subtitle>
     <logo>https://hakuhuang.github.io/images/avatar.png</logo>
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Haku</rights>
+    <rights>All rights reserved 2020, Life&apos;s Endless Corridors</rights>
     <entry>
         <title type="html"><![CDATA[【字体】NGHFB / 两款高飞鸟字体下载]]></title>
         <id>https://hakuhuang.github.io/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/</id>
