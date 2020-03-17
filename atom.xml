@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
     <title>Haku</title>
-    <updated>2020-03-17T06:39:59.967Z</updated>
+    <updated>2020-03-17T06:44:27.300Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
@@ -40,9 +40,11 @@
 <br/>
 <h3 id="关于felt的中文资料非常局限和稀少这里推荐几篇文章和博客以供了解"><strong>关于Felt的中文资料非常局限和稀少，这里推荐几篇文章和博客以供了解：</strong></h3>
 <br/>
-* [VICE出的Felt入门指南](http://k.sina.com.cn/article_2027702851_78dc4a4302700ah4n.html)
-（因为VICE挂了这里贴了新浪的链接）
 <ul>
+<li>
+<p><a href="http://k.sina.com.cn/article_2027702851_78dc4a4302700ah4n.html">VICE出的Felt入门指南</a><br>
+（因为VICE挂了这里贴了新浪的链接）</p>
+</li>
 <li>
 <p><a href="http://ken73820.blogspot.com/search?q=felt&amp;m=1">台湾Felt粉丝Ken的博客-抛开书本走上街</a><br>
 （非常多的翻译采访资料）</p>
