@@ -1,341 +1,191 @@
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>书籍 | (It&#39;s Good) To Be Free</title>
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585032918627">
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>(It&#39;s Good) To Be Free</title>
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://hakuhuang.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="alternate" type="application/atom+xml" title="(It&#39;s Good) To Be Free - Atom Feed" href="https://hakuhuang.github.io/atom.xml">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    
 
-<!-- DEMO JS -->
-<script src="media/scripts/index.js"></script>
-
-
-
+  <meta name="description" content="Life's Endless Corridors" />
 </head>
 <body>
-<div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            (It&#39;s Good) To Be Free
-        </div>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-        </div>
-    </div>
-</nav>
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #书籍
-            </h2>
-        </div>
-        <div class="post-list-container">
-    <div class="post-inner">
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="https://hakuhuang.github.io/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+    <a href="https://hakuhuang.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        书籍
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
-                            <span class="post-title gt-c-content-color-first">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <blockquote>
 <p>1-8章的个人摘录翻译</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-21 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/" class="post-tag">
-                                # Joy Division
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/KC5RjAggI/" class="post-tag">
-                                # New Order
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
-                                # 音乐
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
-                    </a>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
-                            <span class="post-title gt-c-content-color-first">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+      </div>
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png" alt="【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <blockquote>
 <p>9-16章的个人摘录翻译</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-21 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/" class="post-tag">
-                                # Joy Division
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/KC5RjAggI/" class="post-tag">
-                                # New Order
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
-                    </a>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
-                            <span class="post-title gt-c-content-color-first">【书籍】《Tales From the Middle of Nowhere》</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+      </div>
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png" alt="【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【书籍】《Tales From the Middle of Nowhere》
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <blockquote>
 <p>Oasis末期Noel Gallagher的巡演日记</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-17 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="post-tag">
-                                # Oasis
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="post-tag">
-                                # 资源
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="post-tag">
-                                # Noel Gallagher
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-kOx6ZTOqhu4/XnC0tBBlp2I/AAAAAAAAASo/2KOTLCCC_Lsy0mx-Z2O3_RQzmMq50JTpgCLcBGAsYHQ/s640/IMG_9955.JPG')">
-                    </a>
-                
-            </div>
+      </div>
+      <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://1.bp.blogspot.com/-kOx6ZTOqhu4/XnC0tBBlp2I/AAAAAAAAASo/2KOTLCCC_Lsy0mx-Z2O3_RQzmMq50JTpgCLcBGAsYHQ/s640/IMG_9955.JPG" alt="【书籍】《Tales From the Middle of Nowhere》">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【书籍】Oasis / 6本英文传记电子书下载
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
-                            <span class="post-title gt-c-content-color-first">【书籍】Oasis / 6本英文传记电子书下载</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-17 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="post-tag">
-                                # Oasis
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/" class="post-tag">
-                                # Liam Gallagher
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
-                                # 音乐
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="post-tag">
-                                # 资源
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="post-tag">
-                                # Noel Gallagher
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-Uv8PlEYTKoE/XnCgiKTCiVI/AAAAAAAAASc/MgsmPY1v1asMWFQ0cVzJGsXWzNMxueb8gCLcBGAsYHQ/s640/IMG_9947.JPG')">
-                    </a>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/">
-                            <span class="post-title gt-c-content-color-first">【书籍】《FELT : Ballad of the Fan》 by JC Brouchard</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+百度网盘
+提取码：9n4l
+
+
+
+Getting High: The Adventures of Oasis - Paolo Hewitt
+
+  时间1994-1996
+
+
+OASIS Forever The People - Paolo...
+      </div>
+      <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://1.bp.blogspot.com/-Uv8PlEYTKoE/XnCgiKTCiVI/AAAAAAAAASc/MgsmPY1v1asMWFQ0cVzJGsXWzNMxueb8gCLcBGAsYHQ/s640/IMG_9947.JPG" alt="【书籍】Oasis / 6本英文传记电子书下载">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【书籍】《FELT : Ballad of the Fan》 by JC Brouchard
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-16</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <blockquote>
 <p>英国80s后朋/Indie Pop乐队FELT的科普向传记</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-16 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/3H7P_I9ql/" class="post-tag">
-                                # FELT
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
-                                # 音乐
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="post-tag">
-                                # 资源
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-ix77SgM-3qs/Xm-Uv9PlHcI/AAAAAAAAAR8/Alg2uh3c_3Q1QLWgm3hfoqWzK-KsXuRkwCLcBGAsYHQ/s640/IMG_9891.JPG')">
-                    </a>
-                
-            </div>
-        
+      </div>
+      <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/" class="btn">
+        Read more
+      </a>
     </div>
-</div>
-        <div class="pagination-container">
     
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://1.bp.blogspot.com/-ix77SgM-3qs/Xm-Uv9PlHcI/AAAAAAAAAR8/Alg2uh3c_3Q1QLWgm3hfoqWzK-KsXuRkwCLcBGAsYHQ/s640/IMG_9891.JPG" alt="【书籍】《FELT : Ballad of the Fan》 by JC Brouchard">
     
-</div>
+  </div>
+  
+      </div>
 
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </div>
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</footer>
 
     </div>
-</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://hakuhuang.github.io/media/scripts/main.js"></script>
 </body>
 </html>
