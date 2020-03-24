@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hakuhuang.github.io</id>
     <title>(It&apos;s Good) To Be Free</title>
-    <updated>2020-03-24T07:17:42.317Z</updated>
+    <updated>2020-03-24T07:45:58.971Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hakuhuang.github.io"/>
     <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://hakuhuang.github.io/images/avatar.png</logo>
     <icon>https://hakuhuang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, (It&apos;s Good) To Be Free</rights>
+    <entry>
+        <title type="html"><![CDATA[【置顶】欢迎欢迎欢迎]]></title>
+        <id>https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/</id>
+        <link href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/">
+        </link>
+        <updated>2020-03-24T07:44:57.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>内附收款码请给我打钱</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>内附收款码请给我打钱</p>
+</blockquote>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【转载】瘟疫、语言和具体的人：与历史学家罗新的聊天]]></title>
         <id>https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/</id>
@@ -708,32 +724,6 @@
 </ul>
 <figure data-type="image" tabindex="1"><img src="https://1.bp.blogspot.com/-yN3fDo8MjkU/XnDD6273YmI/AAAAAAAAATQ/FI4-jh2nGksXKyV9y0GqlGeyVjwujYmBQCLcBGAsYHQ/s1600/IMG_9960%252820200317-203309%2529.JPG" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="2"><img src="https://1.bp.blogspot.com/-4iZ6Pi2XOXg/XnDD7dC7NyI/AAAAAAAAATY/OT52HPgmOxwuI90cASNYTPe-BQEBPSrKACLcBGAsYHQ/s1600/IMG_9961%252820200317-203323%2529.JPG" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K]]></title>
-        <id>https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/</id>
-        <link href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
-        </link>
-        <updated>2020-03-17T12:28:57.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>2018-08-18 / Live at Chiba ZOZO Marine Stadium, Japan<br>
-2018-08-19 / Live at Osaka Maishima, Japan</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>2018-08-18 / Live at Chiba ZOZO Marine Stadium, Japan<br>
-2018-08-19 / Live at Osaka Maishima, Japan</p>
-</blockquote>
-<!-- more -->
-<ul>
-<li><a href="https://pan.baidu.com/s/1_3z02-lrk6gvT6nfLxfSkA">百度网盘</a><br>
-提取码：f9qd<br>
-（包含两张CD）</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-IXkE27x2yYA/XnDO1tMa3yI/AAAAAAAAAUU/yUnPbae-jFIpKTxbOHriw8w786AcqctJACLcBGAsYHQ/s1600/134426992.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-EfJ1Dmz1K5I/XnDO1R3DeAI/AAAAAAAAAUM/wcq9BLc0pcMy08yEWI0Bj141r4RhlHQVwCLcBGAsYHQ/s640/134426992_o1.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-uJaQ044zB60/XnDO1a_pL2I/AAAAAAAAAUQ/R1_hZvlPlVMr-UKAjT_7Rt8nvMrQEIk7wCLcBGAsYHQ/s640/000000038151_nmskRev.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
