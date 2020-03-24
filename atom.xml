@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hakuhuang.github.io</id>
+    <id>http://hakuhuang.github.io</id>
     <title>(It&apos;s Good) To Be Free</title>
-    <updated>2020-03-24T07:45:58.971Z</updated>
+    <updated>2020-03-24T10:03:26.879Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://hakuhuang.github.io"/>
-    <link rel="self" href="https://hakuhuang.github.io/atom.xml"/>
+    <link rel="alternate" href="http://hakuhuang.github.io"/>
+    <link rel="self" href="http://hakuhuang.github.io/atom.xml"/>
     <subtitle>Life&apos;s Endless Corridors</subtitle>
-    <logo>https://hakuhuang.github.io/images/avatar.png</logo>
-    <icon>https://hakuhuang.github.io/favicon.ico</icon>
+    <logo>http://hakuhuang.github.io/images/avatar.png</logo>
+    <icon>http://hakuhuang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, (It&apos;s Good) To Be Free</rights>
     <entry>
-        <title type="html"><![CDATA[【置顶】欢迎欢迎欢迎]]></title>
-        <id>https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/</id>
-        <link href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/">
+        <title type="html"><![CDATA[【置顶】欢迎]]></title>
+        <id>http://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/</id>
+        <link href="http://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying/">
         </link>
         <updated>2020-03-24T07:44:57.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -24,12 +24,20 @@
 <p>内附收款码请给我打钱</p>
 </blockquote>
 <!-- more -->
+<ul>
+<li>本站内容覆盖音乐（Oasis &amp; Noel Gallagher相关资源下载和在线浏览），网络文章报道转载以及个人随想瞎逼逼内容</li>
+<li>目前还未开发搜索功能，请使用右上角的归档和标签查找相关内容</li>
+<li>因为使用墙外平台搭建导致访问速度和图片加载速度比较缓慢，建议使用VPN</li>
+<li>网站偶尔会出现Bug，如果长时间不能访问请联系</li>
+<li>如果觉得本站有用的话请扫描以下二维码有偿支持<br>
+<img src="https://1.bp.blogspot.com/-w77Q7K0i6Yo/XnnVmWgZscI/AAAAAAAAAds/dkQxwcQl4nQGM6f5iv98OFd3R6AuAlZ_gCLcBGAsYHQ/s640/IMG_0332%252820200324-173950%2529.JPG" alt="" loading="lazy"></li>
+</ul>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[【转载】瘟疫、语言和具体的人：与历史学家罗新的聊天]]></title>
-        <id>https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/</id>
-        <link href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
+        <id>http://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/</id>
+        <link href="http://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
         </link>
         <updated>2020-03-24T05:55:42.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -120,8 +128,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【多图杀猫】和散装绿洲的回忆]]></title>
-        <id>https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/</id>
-        <link href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
+        <id>http://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/</id>
+        <link href="http://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
         </link>
         <updated>2020-03-21T13:52:20.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -212,8 +220,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【随感】台湾和韩国旅行的行与思]]></title>
-        <id>https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/</id>
-        <link href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
+        <id>http://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/</id>
+        <link href="http://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
         </link>
         <updated>2020-03-21T13:45:38.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -237,8 +245,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）]]></title>
-        <id>https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/</id>
-        <link href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
+        <id>http://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/</id>
+        <link href="http://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
         </link>
         <updated>2020-03-21T13:40:00.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -412,8 +420,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）]]></title>
-        <id>https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/</id>
-        <link href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
+        <id>http://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/</id>
+        <link href="http://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
         </link>
         <updated>2020-03-21T13:00:54.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -577,8 +585,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【随感】我被拉去某知名保险公司传销年会的魔幻现实]]></title>
-        <id>https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/</id>
-        <link href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
+        <id>http://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/</id>
+        <link href="http://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
         </link>
         <updated>2020-03-20T16:01:55.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -614,8 +622,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【随感】前互联网时代乐迷的青春聚集地]]></title>
-        <id>https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/</id>
-        <link href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
+        <id>http://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/</id>
+        <link href="http://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
         </link>
         <updated>2020-03-20T14:34:57.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -684,8 +692,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【BOOTLEG】NGHFB / Noel Gallagher's High Flying Koreans / 320K]]></title>
-        <id>https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/</id>
-        <link href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
+        <id>http://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/</id>
+        <link href="http://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
         </link>
         <updated>2020-03-17T12:53:52.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -706,8 +714,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【BOOTLEG】NGHFB / No Noel, No Life / 320K]]></title>
-        <id>https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/</id>
-        <link href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
+        <id>http://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/</id>
+        <link href="http://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
         </link>
         <updated>2020-03-17T12:29:35.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
