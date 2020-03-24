@@ -1,93 +1,90 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>【随感】台湾和韩国旅行的行与思 | (It&#39;s Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585031172905">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585032467765">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://hakuhuang.github.io">
-        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1585031172905" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://hakuhuang.github.io">
-        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
-      </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (It&#39;s Good) To Be Free
+        </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
-            归档
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-XR5mB8TDEpk/XnYa302-K8I/AAAAAAAAAXc/P7qkC7knSZ8K-A5o22yTkrYYpdSdxYUvACLcBGAsYHQ/s640/e647ebf4-b036-4f44-a706-f197e848a10b.jpeg')">
-            </div>
-          
-          <h2 class="post-title">【随感】台湾和韩国旅行的行与思</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-03-21</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                    随感
+                <div class="nav-item">
                     
-                  </a>
-                
-              </span>
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
             
-          </div>
-          <div class="post-content">
-            <blockquote>
+                <div class="nav-item">
+                    
+                        <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    【随感】台湾和韩国旅行的行与思
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-03-21 ·
+                    </time>
+                    
+                        <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tags">
+                            # 随感
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
 <p>很多时候人们对一个遥远国家和民族，甚至一种刻板印象的理解和偏见都是站不住脚的</p>
 </blockquote>
 <!-- more -->
@@ -101,65 +98,47 @@
 <p>  至于韩国，在此之前因为对于kpop和韩流文化完全无感，我对这个国家更是没有任何了解和兴趣。很惭愧的说甚至是存在一定的偏见，可以说是这辈子都不会主动去的一个国家之一。19年5月因为各种机缘巧合突然匆匆忙忙加急办理签证和购买机票，只为了一个礼拜后去首尔奥体中心连看两晚本命英国乐队NGHFB的演出。结果在演出当天晚上，居然奇迹般的遇到了和我在Instagram上互关已久的一位韩国乐迷。结束后在场馆附近，仍然有一群念念不舍的韩国人抱着吉他在马路边上合唱oasis的经典歌曲，甚至还有一位从越南远道而来的乐迷，我也不甘示弱加入了其中。那个晚上来自不同国家和背景的人们因为共同的爱好聚集在一起，随着琴声唱着同一首歌，结结巴巴的用英语沟通，一起合影和交换社交媒体联系方式。在那一个瞬间，我们真的只是相同的一批疯狂乐迷而已。这真是人生中少有的独特回忆。我想，只有在这种情况下一个人才真正能理解music brings people together的真正含义。</p>
 <p>  很多时候人们对一个遥远国家和民族，甚至一种刻板印象的理解和偏见都是站不住脚的。也许所有人在发表意见下定结论之前或许都应该扪心自问：你是否了解那个地方的历史和文化？你是否去过那个地方？你是否有和那个地方的人们面对面交流过？你的那些固有认知究竟是媒体渲染、道听途说还是亲眼所见？</p>
 
-          </div>
+                </div>
+            </article>
         </div>
 
         
-          <div class="next-post">
-            <a class="purple-link" href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
-              <h3 class="post-title">
-                下一篇：【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
-              </h3>
-            </a>
-          </div>
-          
-      </div>
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" class="post-title gt-a-link">
+                    【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
+                </a>
+            </div>
+        
 
-      
+        
 
-      <div class="site-footer">
-  <div class="slogan">Life's Endless Corridors</div>
-  <div class="social-container">
-    
-      
-    
-      
-        <a href="https://twitter.com/hakuinside" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="https://weibo.com/7209366122" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+    hljs.initHighlightingOnLoad()
 </script>
 
 
-
-
-  </body>
+    </div>
+</div>
+</body>
 </html>

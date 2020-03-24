@@ -1,350 +1,300 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>随感 | (It&#39;s Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585031172905">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585032467765">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://hakuhuang.github.io">
-        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1585031172905" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://hakuhuang.github.io">
-        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
-            归档
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 随感
-          </h2> 
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (It&#39;s Good) To Be Free
         </div>
-
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+        <div class="current-tag-container">
+            <h2 class="title gt-c-content-color-first">
+                #随感
+            </h2>
+        </div>
+        <div class="post-list-container">
+    <div class="post-inner">
         
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
-        <h2 class="post-title">【多图杀猫】和散装绿洲的回忆</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
+                            <span class="post-title gt-c-content-color-first">【多图杀猫】和散装绿洲的回忆</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
 <p>干啥啥不行，追星第一名</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-03-21 ·
+                        </time>
+                        
+                            <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tag">
+                                # 随感
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="post-tag">
+                                # Oasis
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/" class="post-tag">
+                                # Liam Gallagher
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
+                                # 音乐
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="post-tag">
+                                # Noel Gallagher
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/" class="post-feature-image"
+                       style="background-image: url('https://1.bp.blogspot.com/-hi76-TBR1lI/XnYrxM31CyI/AAAAAAAAAco/XP8kROGzrUM36jSOkcW8AGPsUoXDV49bACLcBGAsYHQ/s640/IMG_9503.JPG')">
+                    </a>
+                
+            </div>
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                随感
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/InX7tNJTx/">
-                Oasis
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/">
-                Liam Gallagher
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-hi76-TBR1lI/XnYrxM31CyI/AAAAAAAAAco/XP8kROGzrUM36jSOkcW8AGPsUoXDV49bACLcBGAsYHQ/s640/IMG_9503.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
-        <h2 class="post-title">【随感】台湾和韩国旅行的行与思</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
+                            <span class="post-title gt-c-content-color-first">【随感】台湾和韩国旅行的行与思</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
 <p>很多时候人们对一个遥远国家和民族，甚至一种刻板印象的理解和偏见都是站不住脚的</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                随感
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-03-21 ·
+                        </time>
+                        
+                            <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tag">
+                                # 随感
+                            </a>
+                        
+                    </div>
+                </div>
                 
-              </a>
-            
-          </span>
+                    <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/" class="post-feature-image"
+                       style="background-image: url('https://1.bp.blogspot.com/-XR5mB8TDEpk/XnYa302-K8I/AAAAAAAAAXc/P7qkC7knSZ8K-A5o22yTkrYYpdSdxYUvACLcBGAsYHQ/s640/e647ebf4-b036-4f44-a706-f197e848a10b.jpeg')">
+                    </a>
+                
+            </div>
         
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-XR5mB8TDEpk/XnYa302-K8I/AAAAAAAAAXc/P7qkC7knSZ8K-A5o22yTkrYYpdSdxYUvACLcBGAsYHQ/s640/e647ebf4-b036-4f44-a706-f197e848a10b.jpeg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
-        <h2 class="post-title">【随感】我被拉去某知名保险公司传销年会的魔幻现实</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
+                            <span class="post-title gt-c-content-color-first">【随感】我被拉去某知名保险公司传销年会的魔幻现实</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
 <p>长话短说，2019年最魔幻现实的经历之一就是被亲戚拉去了某知名保险公司表面上是感恩客户，实质类似于传销的年会</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                随感
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-03-21 ·
+                        </time>
+                        
+                            <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tag">
+                                # 随感
+                            </a>
+                        
+                    </div>
+                </div>
                 
-              </a>
-            
-          </span>
+                    <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/" class="post-feature-image"
+                       style="background-image: url('https://1.bp.blogspot.com/-fL_4tAUdrVc/XnTqYIEMQ4I/AAAAAAAAAXE/WVfE7QYWuB8E8S8z2lD2AiUar98pUb3HQCLcBGAsYHQ/s640/6c5f39e2-111a-4598-9f86-ceac468bde35.jpeg')">
+                    </a>
+                
+            </div>
         
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-fL_4tAUdrVc/XnTqYIEMQ4I/AAAAAAAAAXE/WVfE7QYWuB8E8S8z2lD2AiUar98pUb3HQCLcBGAsYHQ/s640/6c5f39e2-111a-4598-9f86-ceac468bde35.jpeg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
-        <h2 class="post-title">【随感】前互联网时代乐迷的青春聚集地</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
+                            <span class="post-title gt-c-content-color-first">【随感】前互联网时代乐迷的青春聚集地</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
 <p>如果可能的话，真想回到过去感受一次订阅杂志淘打口碟的青春，再向这个十年悉数告别</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-20</span>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-03-20 ·
+                        </time>
+                        
+                            <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tag">
+                                # 随感
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
+                                # 音乐
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/" class="post-feature-image"
+                       style="background-image: url('https://1.bp.blogspot.com/-d3ErG-6_vR0/XnTWuRO4cSI/AAAAAAAAAW4/98aug7GL9SI9Mzw5Xqo-J4mqvVmHcvH0wCLcBGAsYHQ/s640/268c54eb-294e-41f3-93b8-91832cd3868f.jpeg')">
+                    </a>
+                
+            </div>
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                随感
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-d3ErG-6_vR0/XnTWuRO4cSI/AAAAAAAAAW4/98aug7GL9SI9Mzw5Xqo-J4mqvVmHcvH0wCLcBGAsYHQ/s640/268c54eb-294e-41f3-93b8-91832cd3868f.jpeg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
-        <h2 class="post-title">【随感】New Day Dawning / 写在Felt告别演出30周年</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
+                            <span class="post-title gt-c-content-color-first">【随感】New Day Dawning / 写在Felt告别演出30周年</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
 <p>三十年前的1989年12月19日，英国Indie Pop乐队Felt在伯明翰举办了最后一场告别演出后宣布解散</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-16</span>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-03-16 ·
+                        </time>
+                        
+                            <a href="https://hakuhuang.github.io/tag/7okIvdh4H/" class="post-tag">
+                                # 随感
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/3H7P_I9ql/" class="post-tag">
+                                # FELT
+                            </a>
+                        
+                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
+                                # 音乐
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/" class="post-feature-image"
+                       style="background-image: url('https://1.bp.blogspot.com/-XM_zCEQmEaU/Xm-pYUcvSfI/AAAAAAAAASI/qDY9Ip4UoQERz9BiJx2MK40LXDVJKFyhQCLcBGAsYHQ/s640/IMG_9895%252820200317-002831%2529.JPG')">
+                    </a>
+                
+            </div>
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/7okIvdh4H/">
-                随感
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/3H7P_I9ql/">
-                FELT
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-              </a>
-            
-          </span>
-        
-      </div>
     </div>
+</div>
+        <div class="pagination-container">
     
-      <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-XM_zCEQmEaU/Xm-pYUcvSfI/AAAAAAAAASI/qDY9Ip4UoQERz9BiJx2MK40LXDVJKFyhQCLcBGAsYHQ/s640/IMG_9895%252820200317-002831%2529.JPG')">
-        </div>
-      </a>
     
-  </section>
-
-
-<div class="pagination-container">
-  
-  
 </div>
 
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">Life's Endless Corridors</div>
-  <div class="social-container">
-    
-      
-    
-      
-        <a href="https://twitter.com/hakuinside" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="https://weibo.com/7209366122" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+    hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
-  </body>
+    </div>
+</div>
+</body>
 </html>

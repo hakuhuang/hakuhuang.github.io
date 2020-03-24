@@ -1,423 +1,410 @@
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>(It&#39;s Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585031172905">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1585032467765">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://hakuhuang.github.io">
-        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1585031172905" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://hakuhuang.github.io">
-        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
-      </a>
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (It&#39;s Good) To Be Free
+        </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+        </div>
     </div>
-  </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
         
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
-            归档
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-        <div class="content-container">
-          
-          
 
 <div class="archives-container">
-  
-    <h2 class="year">2020</h2>
     
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
-            <h2 class="post-title">
-              【转载】瘟疫、语言和具体的人：与历史学家罗新的聊天
-              <small>2020-03-24</small>
-            </h2>
-          </a>
-        </article>
-      
+        <h2 class="year gt-c-cotent-color-first">2020</h2>
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-24&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【转载】瘟疫、语言和具体的人：与历史学家罗新的聊天
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【多图杀猫】和散装绿洲的回忆
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【随感】台湾和韩国旅行的行与思
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【随感】我被拉去某知名保险公司传销年会的魔幻现实
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-20&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【随感】前互联网时代乐迷的青春聚集地
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / No Noel, No Life / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】《Tales From the Middle of Nowhere》
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】Oasis / 6本英文传记电子书下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-16&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【随感】New Day Dawning / 写在Felt告别演出30周年
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-16&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】《FELT : Ballad of the Fan》 by JC Brouchard
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-15&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】The Big Issue / November 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/q-magazine-september-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-15&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / September 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/kerrang-september-2019-green-day-the-secrets-out/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Kerrang! / September 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/q-magazine-august-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / August 2019 
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/uncut-february-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】UNCUT / February 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/mojo-february-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】MOJO / February 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/q-magazine-january-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / January 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/q-magazine-december-2017/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / December 2017
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/q-magazine-august-2017/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / August 2017
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/zi-ti-joy-division-and-new-order-qi-kuan-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】Joy Division &amp; New Order / 七款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/zi-ti-green-day-4-kuan-lu-ri-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】Green Day / 四款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://hakuhuang.github.io/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-12&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】NGHFB / 两款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
     
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
-            <h2 class="post-title">
-              【多图杀猫】和散装绿洲的回忆
-              <small>2020-03-21</small>
-            </h2>
-          </a>
-        </article>
-      
+</div>
+
+        <div class="pagination-container">
     
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/sui-gan-tai-wan-he-han-guo-lu-xing-de-xing-yu-si/">
-            <h2 class="post-title">
-              【随感】台湾和韩国旅行的行与思
-              <small>2020-03-21</small>
-            </h2>
-          </a>
-        </article>
-      
     
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
-            <h2 class="post-title">
-              【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
-              <small>2020-03-21</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
-            <h2 class="post-title">
-              【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）
-              <small>2020-03-21</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
-            <h2 class="post-title">
-              【随感】我被拉去某知名保险公司传销年会的魔幻现实
-              <small>2020-03-21</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/yin-le-qian-hu-lian-wang-shi-dai-le-mi-de-qing-chun-ju-ji-di/">
-            <h2 class="post-title">
-              【随感】前互联网时代乐迷的青春聚集地
-              <small>2020-03-20</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
-            <h2 class="post-title">
-              【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
-            <h2 class="post-title">
-              【BOOTLEG】NGHFB / No Noel, No Life / 320K
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
-            <h2 class="post-title">
-              【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/">
-            <h2 class="post-title">
-              【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
-            <h2 class="post-title">
-              【书籍】《Tales From the Middle of Nowhere》
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
-            <h2 class="post-title">
-              【书籍】Oasis / 6本英文传记电子书下载
-              <small>2020-03-17</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
-            <h2 class="post-title">
-              【随感】New Day Dawning / 写在Felt告别演出30周年
-              <small>2020-03-16</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/">
-            <h2 class="post-title">
-              【书籍】《FELT : Ballad of the Fan》 by JC Brouchard
-              <small>2020-03-16</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
-            <h2 class="post-title">
-              【杂志】The Big Issue / November 2019
-              <small>2020-03-15</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/q-magazine-september-2019/">
-            <h2 class="post-title">
-              【杂志】Q Magazine / September 2019
-              <small>2020-03-15</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/kerrang-september-2019-green-day-the-secrets-out/">
-            <h2 class="post-title">
-              【杂志】Kerrang! / September 2019
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/q-magazine-august-2019/">
-            <h2 class="post-title">
-              【杂志】Q Magazine / August 2019 
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/uncut-february-2019/">
-            <h2 class="post-title">
-              【杂志】UNCUT / February 2019
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/mojo-february-2019/">
-            <h2 class="post-title">
-              【杂志】MOJO / February 2019
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/q-magazine-january-2019/">
-            <h2 class="post-title">
-              【杂志】Q Magazine / January 2019
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/q-magazine-december-2017/">
-            <h2 class="post-title">
-              【杂志】Q Magazine / December 2017
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/q-magazine-august-2017/">
-            <h2 class="post-title">
-              【杂志】Q Magazine / August 2017
-              <small>2020-03-14</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/zi-ti-joy-division-and-new-order-qi-kuan-zi-ti-xia-zai/">
-            <h2 class="post-title">
-              【字体】Joy Division &amp; New Order / 七款字体下载
-              <small>2020-03-13</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/zi-ti-green-day-4-kuan-lu-ri-zi-ti-xia-zai/">
-            <h2 class="post-title">
-              【字体】Green Day / 四款字体下载
-              <small>2020-03-13</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://hakuhuang.github.io/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/">
-            <h2 class="post-title">
-              【字体】NGHFB / 两款字体下载
-              <small>2020-03-12</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
 </div>
 
 
-        </div>
-
-        <div class="site-footer">
-  <div class="slogan">Life's Endless Corridors</div>
-  <div class="social-container">
-    
-      
-    
-      
-        <a href="https://twitter.com/hakuinside" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="https://weibo.com/7209366122" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-
-      </div>
-      <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+    hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
     </div>
-  </body>
+</div>
+</body>
 </html>
