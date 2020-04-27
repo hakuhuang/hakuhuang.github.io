@@ -1,112 +1,113 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>【转载】剩余价值 / 瘟疫、语言和具体的人：与历史学家罗新的聊天 | (It&#39;s Good) To Be Free</title>
+<meta name="description" content="Life&#39;s Endless Corridors">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587963289498">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587964754129">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="
-2 月 7 日，罗新在微博上写了八个字，「一生所学，只为此刻。」
-
-
-
-转载自剩余价值播客 051
-
-  2 月 7 日，罗新在微博上写了八个字，「一生所学，只为此刻。」这是一个怎样的此刻？有谁同在感受此刻，铭记此刻？一位历史学家的一生所..." />
-    <meta name="keywords" content="新冠肺炎,转载,社会" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hakuhuang.github.io">
-        <img src="https://hakuhuang.github.io/images/avatar.png?v=1587963289498" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1587964754129" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
         <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/tags" class="site-nav">
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="site-nav">
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
             必读
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-          <a class="social-link" href="https://twitter.com/hakuinside" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        
-      
-        
-          <a class="social-link" href="https://weibo.com/7209366122" target="_blank">
-            <i class="fab fa-weibo"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      Life's Endless Corridors
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">【转载】剩余价值 / 瘟疫、语言和具体的人：与历史学家罗新的聊天</h2>
-            <div class="post-date">2020-03-24</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-_baLvW-PrHg/XnmnAeT8rjI/AAAAAAAAAdU/JhHPBXYtyXIN9YYLj6oryUsIu-poOh7ZQCLcBGAsYHQ/s640/surplusvalue.jpg')">
+            </div>
+          
+          <h2 class="post-title">【转载】剩余价值 / 瘟疫、语言和具体的人：与历史学家罗新的聊天</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-24</span>
             
-              <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-_baLvW-PrHg/XnmnAeT8rjI/AAAAAAAAAdU/JhHPBXYtyXIN9YYLj6oryUsIu-poOh7ZQCLcBGAsYHQ/s640/surplusvalue.jpg')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                    新冠肺炎
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                    转载
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                    社会
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content" v-pre>
-              <blockquote>
+          </div>
+          <div class="post-content">
+            <blockquote>
 <p>2 月 7 日，罗新在微博上写了八个字，「一生所学，只为此刻。」</p>
 </blockquote>
 <!-- more -->
@@ -190,47 +191,53 @@
 <p><strong>剩余价值：但如果达到了这个程度的博爱，我们还能够从愤怒走到行动吗？</strong></p>
 <p>罗新：捍卫人的利益，就是我们最重要的行动。当我们相信人的时候，不是说我们接受人所有的东西，而是说有些东西我们不能够让渡。你封我的号，我就是不高兴，我不能因此变得高兴起来。我的基本权利被侵犯，我就是要反抗，所以我觉得这个是我们行动的基础。同时，你要相信别人也都是人，我们不能够因为我的奋斗就解除别人做人的权利。</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/" class="tag">
-                    新冠肺炎
-                  </a>
-                
-                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/" class="tag">
-                    转载
-                  </a>
-                
-                  <a href="https://hakuhuang.github.io/tag/gY78bXrSL/" class="tag">
-                    社会
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
-                  <h3 class="post-title">
-                    【多图杀猫】和散装绿洲的回忆
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://hakuhuang.github.io/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
+              <h3 class="post-title">
+                下一篇：【多图杀猫】和散装绿洲的回忆
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -240,8 +247,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

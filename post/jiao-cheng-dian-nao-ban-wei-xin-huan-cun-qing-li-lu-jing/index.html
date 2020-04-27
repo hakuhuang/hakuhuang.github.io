@@ -1,112 +1,106 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>【转载】电脑版微信缓存清理路径 | (It&#39;s Good) To Be Free</title>
+<meta name="description" content="Life&#39;s Endless Corridors">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587963289498">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587964754129">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="
-电脑版微信存储空间默认存储在C盘的：C:\Users\你的用户名\Documents\WeChat Files\你的微信号
-
-
-
-attachment 文件夹里是图标图片
-backupfiles 文件夹里是备份的聊天记录
-files 文件..." />
-    <meta name="keywords" content="教程工具,转载" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hakuhuang.github.io">
-        <img src="https://hakuhuang.github.io/images/avatar.png?v=1587963289498" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1587964754129" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
         <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/tags" class="site-nav">
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="site-nav">
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
             必读
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-          <a class="social-link" href="https://twitter.com/hakuinside" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        
-      
-        
-          <a class="social-link" href="https://weibo.com/7209366122" target="_blank">
-            <i class="fab fa-weibo"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      Life's Endless Corridors
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">【转载】电脑版微信缓存清理路径</h2>
-            <div class="post-date">2020-04-17</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/--5vsYG8KT-0/Xpmvl1N6IQI/AAAAAAAAAhc/on4ompBvSYEJWfbmyOktH-QAbJ5Em5N8ACLcBGAsYHQ/s640/WeChat-How-to-Change-Notification-Sounds.jpg')">
+            </div>
+          
+          <h2 class="post-title">【转载】电脑版微信缓存清理路径</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-04-17</span>
             
-              <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/--5vsYG8KT-0/Xpmvl1N6IQI/AAAAAAAAAhc/on4ompBvSYEJWfbmyOktH-QAbJ5Em5N8ACLcBGAsYHQ/s640/WeChat-How-to-Change-Notification-Sounds.jpg')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://hakuhuang.github.io/tag/IA92qsrad/">
+                    教程工具
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                    转载
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content" v-pre>
-              <blockquote>
+          </div>
+          <div class="post-content">
+            <blockquote>
 <p>电脑版微信存储空间默认存储在C盘的：C:\Users\你的用户名\Documents\WeChat Files\你的微信号</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="http://inews.gtimg.com/newsapp_match/0/10492203623/0" alt="" loading="lazy"></figure>
@@ -124,43 +118,53 @@ files 文件..." />
 <li>video文件夹里是视频和视频封面</li>
 </ul>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://hakuhuang.github.io/tag/IA92qsrad/" class="tag">
-                    教程工具
-                  </a>
-                
-                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/" class="tag">
-                    转载
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/">
-                  <h3 class="post-title">
-                    【杂志】Q Magazine / June 2020
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/">
+              <h3 class="post-title">
+                下一篇：【杂志】Q Magazine / June 2020
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -170,8 +174,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

@@ -1,203 +1,317 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>新冠肺炎 | (It&#39;s Good) To Be Free</title>
+<meta name="description" content="Life&#39;s Endless Corridors">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587963289498">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587964754129">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="Life&#39;s Endless Corridors">
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hakuhuang.github.io">
-        <img src="https://hakuhuang.github.io/images/avatar.png?v=1587963289498" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1587964754129" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
         <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/tags" class="site-nav">
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="site-nav">
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
             必读
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-          <a class="social-link" href="https://twitter.com/hakuinside" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        
-      
-        
-          <a class="social-link" href="https://weibo.com/7209366122" target="_blank">
-            <i class="fab fa-weibo"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      Life's Endless Corridors
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 新冠肺炎</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
-                  <h2 class="post-title">【转载】剩余价值 / 瘟疫、语言和具体的人：与历史学家罗新的聊天</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-24
-                </div>
-                <div class="post-abstract">
-                  <blockquote>
+      <div class="content-container">
+
+        <div class="current-tag-container">
+          <h2 class="title">
+            <i class="icon icon-pricetags-outline"></i> 新冠肺炎
+          </h2> 
+        </div>
+
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
+        <h2 class="post-title">【转载】剩余价值 / 瘟疫、语言和具体的人：与历史学家罗新的聊天</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>2 月 7 日，罗新在微博上写了八个字，「一生所学，只为此刻。」</p>
 </blockquote>
 
-                </div>
-              </div>
-              
-                <a class="right" href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
-                  <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-_baLvW-PrHg/XnmnAeT8rjI/AAAAAAAAAdU/JhHPBXYtyXIN9YYLj6oryUsIu-poOh7ZQCLcBGAsYHQ/s640/surplusvalue.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hakuhuang.github.io/post/zhuan-zai-cong-xin-ren-wei-ji-dao-shi-jie-jiu-xing-zhong-guo-zheng-fu-ru-he-chong-jian-da-guo-zi-xin-xu-shi/">
-                  <h2 class="post-title">【转载】端 / 从信任危机到世界救星，中国政府如何重建“大国自信”叙事</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-21
-                </div>
-                <div class="post-abstract">
-                  <blockquote>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-24</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                新冠肺炎
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                转载
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                社会
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-wen-yi-yu-yan-he-ju-ti-de-ren-yu-li-shi-xue-jia-luo-xin-de-liao-tian/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-_baLvW-PrHg/XnmnAeT8rjI/AAAAAAAAAdU/JhHPBXYtyXIN9YYLj6oryUsIu-poOh7ZQCLcBGAsYHQ/s640/surplusvalue.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-cong-xin-ren-wei-ji-dao-shi-jie-jiu-xing-zhong-guo-zheng-fu-ru-he-chong-jian-da-guo-zi-xin-xu-shi/">
+        <h2 class="post-title">【转载】端 / 从信任危机到世界救星，中国政府如何重建“大国自信”叙事</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>自信叙事被广泛认可，也意味着宣传系统在1月和2月份屡次失手之后，终于借着国内疫情减缓、全球疫情暴发的“机会”，夺回了舆论场的话语权。</p>
 </blockquote>
 
-                </div>
-              </div>
-              
-                <a class="right" href="https://hakuhuang.github.io/post/zhuan-zai-cong-xin-ren-wei-ji-dao-shi-jie-jiu-xing-zhong-guo-zheng-fu-ru-he-chong-jian-da-guo-zi-xin-xu-shi/">
-                  <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-XfitohCNMi8/XnyuzIscwpI/AAAAAAAAAeU/3fdcfBTf9YkzYr5PiNsftEylhn6G7GXcgCLcBGAsYHQ/s640/b13c7084-6914-494c-8f93-69deaba4228f.jpeg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hakuhuang.github.io/post/zhuan-zai-she-hui-xue-jia-zhou-xue-guang-tan-fei-yan-wei-ji-shang-zhong-guo-guan-liao-ru-he-shi-qu-liao-zhu-jian-he-neng-dong-xing/">
-                  <h2 class="post-title">【转载】端 / 社会学家周雪光谈肺炎危机（上）（下）</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-21
-                </div>
-                <div class="post-abstract">
-                  <blockquote>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                新冠肺炎
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                转载
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                社会
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-cong-xin-ren-wei-ji-dao-shi-jie-jiu-xing-zhong-guo-zheng-fu-ru-he-chong-jian-da-guo-zi-xin-xu-shi/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-XfitohCNMi8/XnyuzIscwpI/AAAAAAAAAeU/3fdcfBTf9YkzYr5PiNsftEylhn6G7GXcgCLcBGAsYHQ/s640/b13c7084-6914-494c-8f93-69deaba4228f.jpeg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-she-hui-xue-jia-zhou-xue-guang-tan-fei-yan-wei-ji-shang-zhong-guo-guan-liao-ru-he-shi-qu-liao-zhu-jian-he-neng-dong-xing/">
+        <h2 class="post-title">【转载】端 / 社会学家周雪光谈肺炎危机（上）（下）</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>“当政府把什么都管起来，变得越来越刚性的时候，一旦失误，就会导致巨大震荡和损失。”</p>
 </blockquote>
 
-                </div>
-              </div>
-              
-                <a class="right" href="https://hakuhuang.github.io/post/zhuan-zai-she-hui-xue-jia-zhou-xue-guang-tan-fei-yan-wei-ji-shang-zhong-guo-guan-liao-ru-he-shi-qu-liao-zhu-jian-he-neng-dong-xing/">
-                  <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-NhsJd6W3XBs/Xnr4G27Lf9I/AAAAAAAAAeI/MR10kA3cL3sgzzGPMuI4d3D91pt8M3megCLcBGAsYHQ/s640/2bbb7be4528e43a4904bd6efe9d99481.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hakuhuang.github.io/post/zhuan-zai-ren-wu-fa-shao-zi-de-ren/">
-                  <h2 class="post-title">【转载】人物 / 发哨子的人</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-21
-                </div>
-                <div class="post-abstract">
-                  <blockquote>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                新冠肺炎
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                转载
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                社会
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-she-hui-xue-jia-zhou-xue-guang-tan-fei-yan-wei-ji-shang-zhong-guo-guan-liao-ru-he-shi-qu-liao-zhu-jian-he-neng-dong-xing/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-NhsJd6W3XBs/Xnr4G27Lf9I/AAAAAAAAAeI/MR10kA3cL3sgzzGPMuI4d3D91pt8M3megCLcBGAsYHQ/s640/2bbb7be4528e43a4904bd6efe9d99481.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-ren-wu-fa-shao-zi-de-ren/">
+        <h2 class="post-title">【转载】人物 / 发哨子的人</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>没有人在任何场合跟我说表示抱歉这句话。但我依然觉得，这次的事情更加说明了每个人还是要坚持自己独立的思想，因为要有人站出来说真话，必须要有人，这个世界必须要有不同的声音……</p>
 </blockquote>
 
-                </div>
-              </div>
-              
-                <a class="right" href="https://hakuhuang.github.io/post/zhuan-zai-ren-wu-fa-shao-zi-de-ren/">
-                  <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-W-pjbjIJLqI/Xn2bnfBapwI/AAAAAAAAAeg/-MlPDLmxbTc3TtqRFjTojj0uRqGzNI3VwCLcBGAsYHQ/s640/7578886.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                新冠肺炎
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                转载
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                社会
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/zhuan-zai-ren-wu-fa-shao-zi-de-ren/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-W-pjbjIJLqI/Xn2bnfBapwI/AAAAAAAAAeg/-MlPDLmxbTc3TtqRFjTojj0uRqGzNI3VwCLcBGAsYHQ/s640/7578886.jpg')">
+        </div>
+      </a>
+    
+  </section>
 
-          <div class="pagination-container">
+
+<div class="pagination-container">
   
   
 </div>
 
-        </div>
+
       </div>
+
+      <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -207,8 +321,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

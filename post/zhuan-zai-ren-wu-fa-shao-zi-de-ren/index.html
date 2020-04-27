@@ -1,109 +1,113 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>【转载】人物 / 发哨子的人 | (It&#39;s Good) To Be Free</title>
+<meta name="description" content="Life&#39;s Endless Corridors">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587963289498">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1587964754129">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="
-没有人在任何场合跟我说表示抱歉这句话。但我依然觉得，这次的事情更加说明了每个人还是要坚持自己独立的思想，因为要有人站出来说真话，必须要有人，这个世界必须要有不同的声音……
-
-
-  2019年12月30日，艾芬曾拿到过一份不明肺炎病人的病毒..." />
-    <meta name="keywords" content="新冠肺炎,转载,社会" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hakuhuang.github.io">
-        <img src="https://hakuhuang.github.io/images/avatar.png?v=1587963289498" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1587964754129" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
         <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/tags" class="site-nav">
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="site-nav">
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
             必读
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-          <a class="social-link" href="https://twitter.com/hakuinside" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        
-      
-        
-          <a class="social-link" href="https://weibo.com/7209366122" target="_blank">
-            <i class="fab fa-weibo"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      Life's Endless Corridors
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">【转载】人物 / 发哨子的人</h2>
-            <div class="post-date">2020-03-21</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-W-pjbjIJLqI/Xn2bnfBapwI/AAAAAAAAAeg/-MlPDLmxbTc3TtqRFjTojj0uRqGzNI3VwCLcBGAsYHQ/s640/7578886.jpg')">
+            </div>
+          
+          <h2 class="post-title">【转载】人物 / 发哨子的人</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-21</span>
             
-              <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-W-pjbjIJLqI/Xn2bnfBapwI/AAAAAAAAAeg/-MlPDLmxbTc3TtqRFjTojj0uRqGzNI3VwCLcBGAsYHQ/s640/7578886.jpg')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
+                    新冠肺炎
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">
+                    转载
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
+                    社会
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content" v-pre>
-              <blockquote>
+          </div>
+          <div class="post-content">
+            <blockquote>
 <p>没有人在任何场合跟我说表示抱歉这句话。但我依然觉得，这次的事情更加说明了每个人还是要坚持自己独立的思想，因为要有人站出来说真话，必须要有人，这个世界必须要有不同的声音……</p>
 </blockquote>
 <!-- more -->
@@ -193,47 +197,53 @@
 <p>  2月21号早上领导和我谈话，其实我想问几个问题，比如有没有觉得那天批评我批评错了?我希望能够给我一个道歉。但是我不敢问。没有人在任何场合跟我说表示抱歉这句话。但我依然觉得，这次的事情更加说明了每个人还是要坚持自己独立的思想，因为要有人站出来说真话，必须要有人，这个世界必须要有不同的声音，是吧?</p>
 <p>  作为武汉人，我们哪一个不热爱自己的城市?我们现在回想起来以前过得那种最普通的生活，是多么奢侈的幸福。我现在觉得把宝宝抱着，陪他出去玩一下滑梯或者跟老公出去看个电影，在以前再平常都不过，到现在来说都是一种幸福，都是不能达到的幸福。</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/" class="tag">
-                    新冠肺炎
-                  </a>
-                
-                  <a href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/" class="tag">
-                    转载
-                  </a>
-                
-                  <a href="https://hakuhuang.github.io/tag/gY78bXrSL/" class="tag">
-                    社会
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
-                  <h3 class="post-title">
-                    【随感】我被拉去某知名保险公司传销年会的魔幻现实
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://hakuhuang.github.io/post/sui-gan-wo-bei-la-qu-mou-zhi-ming-bao-xian-gong-si-chuan-xiao-nian-hui-de-mo-huan-xian-shi/">
+              <h3 class="post-title">
+                下一篇：【随感】我被拉去某知名保险公司传销年会的魔幻现实
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -243,8 +253,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
