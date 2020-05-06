@@ -1,301 +1,354 @@
+
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    
+<meta charset="utf-8" >
+
 <title>翻译 | (It&#39;s Good) To Be Free</title>
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1588766504850">
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<meta name="description" content="Life&#39;s Endless Corridors">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1588771630594">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-<!-- DEMO JS -->
-<script src="media/scripts/index.js"></script>
 
 
 
-</head>
-<body>
-<div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            (It&#39;s Good) To Be Free
-        </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1588771630594" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
+        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
+      </a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu gt-a-link">
-                            必读
-                        </a>
-                    
-                </div>
-            
-        </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
-</nav>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
+            必读
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+
         <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #翻译
-            </h2>
+          <h2 class="title">
+            <i class="icon icon-pricetags-outline"></i> 翻译
+          </h2> 
         </div>
-        <div class="post-list-container">
-    <div class="post-inner">
+
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/cai-fang-noel-gallagher-tan-guan-yu-ming-ren-xing-qin-an-nu-quan-he-jia-ting-zhong-fan/">
-                            <span class="post-title gt-c-content-color-first">【采访】Noel Gallagher谈关于名人性侵案、女权和家庭 / 中翻</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-06 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="post-tag">
-                                # Noel Gallagher
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/cai-fang-noel-gallagher-tan-guan-yu-ming-ren-xing-qin-an-nu-quan-he-jia-ting-zhong-fan/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-xJ0UWKlyVCQ/XoyUX5biptI/AAAAAAAAAfo/6EfTdWXcTx0ygaCqHzdDt9q8ttqUxYjfwCLcBGAsYHQ/s1600/IMG_1018.JPG')">
-                    </a>
-                
-            </div>
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/cai-fang-noel-gallagher-tan-guan-yu-ming-ren-xing-qin-an-nu-quan-he-jia-ting-zhong-fan/">
+        <h2 class="post-title">【采访】Noel Gallagher谈关于名人性侵案、女权和家庭 / 中翻</h2>
+      </a>
+      <div class="post-abstract">
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
-                            <span class="post-title gt-c-content-color-first">【杂志】British VOGUE / May 2020 / 中翻</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-04-06</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
+                翻译
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
+                Noel Gallagher
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/cai-fang-noel-gallagher-tan-guan-yu-ming-ren-xing-qin-an-nu-quan-he-jia-ting-zhong-fan/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-xJ0UWKlyVCQ/XoyUX5biptI/AAAAAAAAAfo/6EfTdWXcTx0ygaCqHzdDt9q8ttqUxYjfwCLcBGAsYHQ/s1600/IMG_1018.JPG')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
+        <h2 class="post-title">【杂志】British VOGUE / May 2020 / 中翻</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>作为Noel Gallagher的妻子，Sara MacDonald一直处于Oasis成功、动荡和Twitter战争的漩涡中心。现在，她有自己的故事要讲。</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-04 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
-                                # 音乐
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/g5utbDmn91/" class="post-tag">
-                                # 杂志
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="post-tag">
-                                # 资源
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="post-tag">
-                                # Noel Gallagher
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-DD0tR9PNGMA/XohFtQTdSKI/AAAAAAAAAe0/7BBxbVRNq4U1peJ3BJzk7XQfb6tBC_E4wCLcBGAsYHQ/s640/British_Vogue_-_May_2020-1118.jpg')">
-                    </a>
-                
-            </div>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-04-04</span>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
-                            <span class="post-title gt-c-content-color-first">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
+                翻译
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
+                音乐
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/g5utbDmn91/">
+                杂志
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
+                资源
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
+                Noel Gallagher
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-DD0tR9PNGMA/XohFtQTdSKI/AAAAAAAAAe0/7BBxbVRNq4U1peJ3BJzk7XQfb6tBC_E4wCLcBGAsYHQ/s640/British_Vogue_-_May_2020-1118.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
+        <h2 class="post-title">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>1-8章的个人摘录翻译</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-21 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/" class="post-tag">
-                                # Joy Division
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/KC5RjAggI/" class="post-tag">
-                                # New Order
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="post-tag">
-                                # 音乐
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
-                    </a>
-                
-            </div>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
-                            <span class="post-title gt-c-content-color-first">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
+                翻译
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/">
+                Joy Division
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/m_O25coBYl/">
+                书籍
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/KC5RjAggI/">
+                New Order
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
+                音乐
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
+        <h2 class="post-title">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）</h2>
+      </a>
+      <div class="post-abstract">
+        <blockquote>
 <p>9-16章的个人摘录翻译</p>
 </blockquote>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-03-21 ·
-                        </time>
-                        
-                            <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="post-tag">
-                                # 翻译
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/" class="post-tag">
-                                # Joy Division
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="post-tag">
-                                # 书籍
-                            </a>
-                        
-                            <a href="https://hakuhuang.github.io/tag/KC5RjAggI/" class="post-tag">
-                                # New Order
-                            </a>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/" class="post-feature-image"
-                       style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
-                    </a>
-                
-            </div>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-03-21</span>
         
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
+                翻译
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/xcfpTA4ad/">
+                Joy Division
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/m_O25coBYl/">
+                书籍
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://hakuhuang.github.io/tag/KC5RjAggI/">
+                New Order
+                
+              </a>
+            
+          </span>
+        
+      </div>
     </div>
-</div>
-        <div class="pagination-container">
     
+      <a href="https://hakuhuang.github.io/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
+        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')">
+        </div>
+      </a>
     
+  </section>
+
+
+<div class="pagination-container">
+  
+  
 </div>
 
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
-    <div class="social-container">
-        
-            
-        
-            
-                <a href="https://twitter.com/hakuinside" target="_blank">
-                    <i class="fab fa-twitter gt-c-content-color-first"></i>
-                </a>
-            
-        
-            
-                <a href="https://weibo.com/7209366122" target="_blank">
-                    <i class="fab fa-weibo gt-c-content-color-first"></i>
-                </a>
-            
-        
-            
-        
-            
-        
-            
-        
-    </div>
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-<script>
-    hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-    </div>
-</div>
-</body>
+
+
+
+  </body>
 </html>
