@@ -1,592 +1,166 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+  <head>
+    
+<meta charset="utf-8" >
 
-<head>
-	<meta charset="UTF-8" />
 <title>(It&#39;s Good) To Be Free</title>
 <meta name="description" content="Life&#39;s Endless Corridors">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-<link type='text/css' rel='stylesheet' href='https://hakuhuang.github.io/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1589803505552">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
 
-<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 
-<script>
-    hljs.initHighlightingOnLoad();
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hakuhuang.github.io">
+        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1589803505552" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hakuhuang.github.io">
+        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
+            必读
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          <div class="tags-container">
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/IA92qsrad/">教程工具</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/HcMOeXzX0/">新冠肺炎</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/gY78bXrSL/">社会</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">资源</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/InX7tNJTx/">Oasis</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/aLnQpgFPkG/">Liam Gallagher</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">音乐</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/Ftcw6imstL/">Noel Gallagher</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/Z6mk3Gl0s/">转载</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/g5utbDmn91/">杂志</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/kNEj5GTk5/">翻译</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/7okIvdh4H/">随感</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/xcfpTA4ad/">Joy Division</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/m_O25coBYl/">书籍</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/KC5RjAggI/">New Order</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/v1kzZcVF2/">CD</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/3H7P_I9ql/">FELT</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/WLuWnz2gL/">Green Day</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/haIDssi1L/">Paul Weller</a>
+            
+              <a class="tag" href="https://hakuhuang.github.io/tag/C6y2tyQep/">设计</a>
+            
+          </div>
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan">Life's Endless Corridors</div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/hakuinside" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="https://weibo.com/7209366122" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+      </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-</head>
-
-<body>
-	<div class="layout theme-dark">
-		<div class="layout-header">
-
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-
-					<div class="navbar">
-
-						<div class="logo">
-							<a href="https://hakuhuang.github.io">
-								<img class="logo"
-									src="https://hakuhuang.github.io/media/images/site_avatar.png?v=1589803313993"
-									alt="">
-							</a>
-						</div>
-
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="归档"
-										href="https://hakuhuang.github.io/tags">归档</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="必读"
-										href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a>
-								</li>
-								
-							</ul>
-						</div>
-
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-
-
-
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
-
-									<form id="gridea-search-form" data-update="1589803313993" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
 
 
 
 
-		</div>
-	</div>
-
-</div>
-		<div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="归档" href="https://hakuhuang.github.io/tags">归档</a></li>
-			
-			<li class="layout-collapse-item"><a title="必读" href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-		<div class="layout-content">
-			<div class="layout-content-main">
-				<div class="container">
-					<div class="row justify-content-lg-center">
-						<div class="col-12 col-lg-9">
-							<div class="layout-tags row">
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">教程工具</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 3 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">新冠肺炎</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 5 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">社会</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 5 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">资源</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 22 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Oasis</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 8 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Liam Gallagher</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 6 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">音乐</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 26 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Noel Gallagher</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 20 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">转载</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 5 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">杂志</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 12 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">翻译</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 4 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">随感</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 5 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Joy Division</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 3 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">书籍</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 5 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">New Order</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 4 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">CD</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 4 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">FELT</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 2 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Green Day</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 2 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">Paul Weller</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 1 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-6 mb-3">
-									<div class="card">
-										<div class="card-header">
-											<div class="header-content">
-												<div class="title">设计</div>
-											</div>
-										</div>
-										<div class="card-body">
-											<div class="card-item">
-												<div class="list-content">
-													<div class="list-body">
-														<div class="title" href=""><span> 3 </span> 篇文章</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-			<div class="layout-footer">
-
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									<span>© 2020 </span>
-									<a href="https://hakuhuang.github.io" title="(It&#39;s Good) To Be Free">(It&#39;s Good) To Be Free</a>
-									<span class="px-2">⋅</span>
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									<span class="footer-links-item">
-										<a href="https://twitter.com/hakuinside" target="_blank">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.douban.com/people/147869986/" target="_blank">
-											<i class="fa fa-douban" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.instagram.com/hakuhuang/" target="_blank">
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.weibo.com/7209366122" target="_blank">
-											<i class="fa fa-weibo" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/main.js'></script>
-	
-	</div>
-</body>
-
+    </div>
+  </body>
 </html>
