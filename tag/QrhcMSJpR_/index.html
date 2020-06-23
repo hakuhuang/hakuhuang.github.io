@@ -1,740 +1,852 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    
-<meta charset="utf-8" >
+<html lang="zh-CN">
 
-<title>资源 | (It&#39;s Good) To Be Free</title>
+<head>
+    <meta charset="UTF-8" />
+<title>资源 - (It&#39;s Good) To Be Free</title>
 <meta name="description" content="Life&#39;s Endless Corridors">
-
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hakuhuang.github.io/favicon.ico?v=1591337091287">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://hakuhuang.github.io/styles/main.css">
+<link type='text/css' rel='stylesheet' href='https://hakuhuang.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</head>
+
+<body>
+
+    <div class="layout theme-dark">
+
+        <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://hakuhuang.github.io">
+								<img class="logo"
+									src="https://hakuhuang.github.io/media/images/site_avatar.png?v=1592915073527"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="首页"
+										href="/">首页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="https://hakuhuang.github.io/tags">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="必读"
+										href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1592915073527" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
 
 
 
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://hakuhuang.github.io">
-        <img class="avatar" src="https://hakuhuang.github.io/images/avatar.png?v=1591337091287" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://hakuhuang.github.io">
-        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
-      </a>
+
+		</div>
+	</div>
+
+</div>
+
+        <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="https://hakuhuang.github.io/tags">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="必读" href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a></li>
+			
+
+		</ul>
+	</div>
+</div>
+
+        
+
+<div class="layout-nav" style="background-image: url('https://1.bp.blogspot.com/-6JTJ-nK0cdo/XvH0blj3xpI/AAAAAAAAAkY/b1wk932ZrRMEtesKbyXSR-ZX6G0PR9_5ACLcBGAsYHQ/s1600/Cover%2B%25282%2529.jpg')">
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-12 col-lg-9">
+        <div class="nav-content">
+          <h1>资源</h1>
+          <div class="sub-title"># 标签</div>
+        </div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+
   </div>
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
-            必读
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
 
 
-      <div class="content-container">
 
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 资源
-          </h2> 
-        </div>
 
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
-        <h2 class="post-title">【杂志】The Big Issue / November 2019 / 中翻</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="layout-content">
+  <div class="layout-content-main">
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="card-list">
+            
+            
+            <article class="card">
+              <div class="card-item row">
+                
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/bootleg-oasis-kick-a-hole-in-the-sky-320k/">
+                        <h3>【BOOTLEG】Oasis /  Kick A Hole In The Sky / 320K</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
+<p>绿洲时期一些Acoustic歌曲的高音质合集（NG Vocal为主）</p>
+</blockquote>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/" class="tag" data-title="CD">
+                        CD
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="tag" data-title="Oasis">
+                        Oasis
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/" class="tag" data-title="Liam Gallagher">
+                        Liam Gallagher
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-06-23</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/bootleg-oasis-kick-a-hole-in-the-sky-320k/" style="background-image: url('https://1.bp.blogspot.com/-6JTJ-nK0cdo/XvH0blj3xpI/AAAAAAAAAkY/b1wk932ZrRMEtesKbyXSR-ZX6G0PR9_5ACLcBGAsYHQ/s1600/Cover%2B%25282%2529.jpg')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
+            
+            
+            
+            <article class="card">
+              <div class="card-item row">
+                
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
+                        <h3>【杂志】The Big Issue / November 2019 / 中翻</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>「我才不把自己当回事哩……」关于鲍里斯、布莱尔、脱欧和Liam——Noel Gallagher的巧言妙语</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-06-03</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="tag" data-title="翻译">
+                        翻译
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/g5utbDmn91/" class="tag" data-title="杂志">
+                        杂志
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-06-03</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/the-big-issue-november-2019/" style="background-image: url('https://1.bp.blogspot.com/-kadktdwzx4s/Xmz9TRo44gI/AAAAAAAAAGw/mUFA2I9Dihwb5Xjku1bghy8D9UnkJ5HkgCLcBGAsYHQ/s640/IMG_9682.JPG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
-                翻译
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/g5utbDmn91/">
-                杂志
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/social_science_online_lecture/">
+                        <h3>【讲座】新冠期间线上社科讲座资源整理</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/IA92qsrad/" class="tag" data-title="教程工具">
+                        教程工具
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/" class="tag" data-title="新冠肺炎">
+                        新冠肺炎
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/gY78bXrSL/" class="tag" data-title="社会">
+                        社会
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-05-05</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/social_science_online_lecture/" style="background-image: url('https://1.bp.blogspot.com/-vRc_eNUGHoE/XrKTfqgj38I/AAAAAAAAAic/OXEJNyxeTOIQHvF7bk86qYAzu8fCl9k_QCLcBGAsYHQ/s640/photo-1585224907690-cbaf12e38471.jpg')"></a>
+                  </div>
+                </div>
                 
-              </a>
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
             
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/the-big-issue-november-2019/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-kadktdwzx4s/Xmz9TRo44gI/AAAAAAAAAGw/mUFA2I9Dihwb5Xjku1bghy8D9UnkJ5HkgCLcBGAsYHQ/s640/IMG_9682.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/social_science_online_lecture/">
-        <h2 class="post-title">【讲座】新冠期间线上社科讲座资源整理</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-05-05</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/IA92qsrad/">
-                教程工具
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/HcMOeXzX0/">
-                新冠肺炎
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/gY78bXrSL/">
-                社会
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/social_science_online_lecture/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-vRc_eNUGHoE/XrKTfqgj38I/AAAAAAAAAic/OXEJNyxeTOIQHvF7bk86qYAzu8fCl9k_QCLcBGAsYHQ/s640/photo-1585224907690-cbaf12e38471.jpg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/">
-        <h2 class="post-title">【杂志】Q Magazine / June 2020</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/">
+                        <h3>【杂志】Q Magazine / June 2020</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>Morning Glory 25th Anniversary</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-04-07</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="tag" data-title="Oasis">
+                        Oasis
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/" class="tag" data-title="Liam Gallagher">
+                        Liam Gallagher
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/g5utbDmn91/" class="tag" data-title="杂志">
+                        杂志
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-04-07</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/" style="background-image: url('https://1.bp.blogspot.com/-W_15BZ96NWk/XoyVNL4iqSI/AAAAAAAAAf0/_tvYkVRtziML_4NvwcilbEL1dI6oe9EhgCLcBGAsYHQ/s1600/IMG_1019.JPG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/InX7tNJTx/">
-                Oasis
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/">
-                Liam Gallagher
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/g5utbDmn91/">
-                杂志
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/za-zhi-q-magazine-june-2020/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-W_15BZ96NWk/XoyVNL4iqSI/AAAAAAAAAf0/_tvYkVRtziML_4NvwcilbEL1dI6oe9EhgCLcBGAsYHQ/s1600/IMG_1019.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
-        <h2 class="post-title">【杂志】British VOGUE / May 2020 / 中翻</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
+                        <h3>【杂志】British VOGUE / May 2020 / 中翻</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>作为Noel Gallagher的妻子，Sara MacDonald一直处于Oasis成功、动荡和Twitter战争的漩涡中心。现在，她有自己的故事要讲。</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-04-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/" class="tag" data-title="翻译">
+                        翻译
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/g5utbDmn91/" class="tag" data-title="杂志">
+                        杂志
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-04-04</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/" style="background-image: url('https://1.bp.blogspot.com/-DD0tR9PNGMA/XohFtQTdSKI/AAAAAAAAAe0/7BBxbVRNq4U1peJ3BJzk7XQfb6tBC_E4wCLcBGAsYHQ/s640/British_Vogue_-_May_2020-1118.jpg')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/kNEj5GTk5/">
-                翻译
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/g5utbDmn91/">
-                杂志
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/za-zhi-british-vogue-sara-macdonald/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-DD0tR9PNGMA/XohFtQTdSKI/AAAAAAAAAe0/7BBxbVRNq4U1peJ3BJzk7XQfb6tBC_E4wCLcBGAsYHQ/s640/British_Vogue_-_May_2020-1118.jpg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
-        <h2 class="post-title">【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
+                        <h3>【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>2019-05-19&amp;20 / Live at Seoul Olympic Hall, Korea</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/" class="tag" data-title="CD">
+                        CD
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-03-17</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/" style="background-image: url('https://1.bp.blogspot.com/-yUTxIOarKiQ/XnDJtC7sLWI/AAAAAAAAAT4/6ReJf82ejX0Lo92jk2GckqbigVB2LLlvgCLcBGAsYHQ/s640/IMG_9967.JPEG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/">
-                CD
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-yUTxIOarKiQ/XnDJtC7sLWI/AAAAAAAAAT4/6ReJf82ejX0Lo92jk2GckqbigVB2LLlvgCLcBGAsYHQ/s640/IMG_9967.JPEG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
-        <h2 class="post-title">【BOOTLEG】NGHFB / No Noel, No Life / 320K</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
+                        <h3>【BOOTLEG】NGHFB / No Noel, No Life / 320K</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>2019-05-15 / Live at Chiba Makuhari Messe, Japan</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/" class="tag" data-title="CD">
+                        CD
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-03-17</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/" style="background-image: url('https://1.bp.blogspot.com/-9tMIOrs8jyc/XnDIQMZBwdI/AAAAAAAAATk/Nm9WL5boNrch2nEjFm-peV1RPBwEOzz-wCLcBGAsYHQ/s640/IMG_9964.JPG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/">
-                CD
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-no-noel-no-life/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-9tMIOrs8jyc/XnDIQMZBwdI/AAAAAAAAATk/Nm9WL5boNrch2nEjFm-peV1RPBwEOzz-wCLcBGAsYHQ/s640/IMG_9964.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
-        <h2 class="post-title">【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
+                        <h3>【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>2018-08-18 / Live at Chiba ZOZO Marine Stadium, Japan<br>
 2018-08-19 / Live at Osaka Maishima, Japan</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/" class="tag" data-title="CD">
+                        CD
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-03-17</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/" style="background-image: url('https://1.bp.blogspot.com/-Ry9hB1OOPwI/XnDO2dDXJ8I/AAAAAAAAAUY/VZ9Wp4f0vGIPklW82DJTK1N0KFEPQArNwCLcBGAsYHQ/s640/IMG_9970%252820200317-212031%2529.JPEG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/">
-                CD
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-Ry9hB1OOPwI/XnDO2dDXJ8I/AAAAAAAAAUY/VZ9Wp4f0vGIPklW82DJTK1N0KFEPQArNwCLcBGAsYHQ/s640/IMG_9970%252820200317-212031%2529.JPEG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/">
-        <h2 class="post-title">【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/">
+                        <h3>【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>1998-02-20 / Live at Tokyo Budokan, Japan</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/" class="tag" data-title="CD">
+                        CD
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="tag" data-title="Oasis">
+                        Oasis
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/" class="tag" data-title="Liam Gallagher">
+                        Liam Gallagher
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/" class="tag" data-title="音乐">
+                        音乐
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-03-17</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/" style="background-image: url('https://1.bp.blogspot.com/-HPIPPDNybG4/XnC9GPJLApI/AAAAAAAAAS8/TkB1w1X_jc4N5Esy8HXujYUjC2l2fqZyQCLcBGAsYHQ/s640/IMG_9959.JPG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/v1kzZcVF2/">
-                CD
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/InX7tNJTx/">
-                Oasis
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/">
-                Liam Gallagher
+            <article class="card">
+              <div class="card-item row">
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/bootleg-oasis-the-boys-are-back-in-town/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-HPIPPDNybG4/XnC9GPJLApI/AAAAAAAAAS8/TkB1w1X_jc4N5Esy8HXujYUjC2l2fqZyQCLcBGAsYHQ/s640/IMG_9959.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
-        <h2 class="post-title">【书籍】《Tales From the Middle of Nowhere》</h2>
-      </a>
-      <div class="post-abstract">
-        <blockquote>
+                <div class="card-content col-8 col-lg-9">
+                  <div class="card-body">
+                    <div class="header">
+                      <a class="title" href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
+                        <h3>【书籍】《Tales From the Middle of Nowhere》</h3>
+                      </a>
+                    </div>
+                    <div class="inner d-none d-sm-block">
+                      <div class="abstract">
+                        <blockquote>
 <p>Oasis末期Noel Gallagher的巡演日记</p>
 </blockquote>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="item">
+                      
+                      <a href="https://hakuhuang.github.io/tag/m_O25coBYl/" class="tag" data-title="书籍">
+                        书籍
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/InX7tNJTx/" class="tag" data-title="Oasis">
+                        Oasis
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/" class="tag" data-title="资源">
+                        资源
+                      </a>
+                      
+                      <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/" class="tag" data-title="Noel Gallagher">
+                        Noel Gallagher
+                      </a>
+                      
+                    </div>
+                    <div class="item">2020-03-17</div>
+                  </div>
+                </div>
+                <div class="card-thumb col-4 col-lg-3">
+                  <div class="thumb">
+                    <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/" style="background-image: url('https://1.bp.blogspot.com/-kOx6ZTOqhu4/XnC0tBBlp2I/AAAAAAAAASo/2KOTLCCC_Lsy0mx-Z2O3_RQzmMq50JTpgCLcBGAsYHQ/s640/IMG_9955.JPG')"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
             
-              <a href="https://hakuhuang.github.io/tag/m_O25coBYl/">
-                书籍
-                
-                  ，
-                
-              </a>
             
-              <a href="https://hakuhuang.github.io/tag/InX7tNJTx/">
-                Oasis
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
+          </div>
+
+          
+          <div class="layout-paginator">
+            <div class="paginator">
+              <button href="https://hakuhuang.github.io/tag/QrhcMSJpR_/page/2" class="btn btn-paginator width-100">加载更多</button>
+            </div>
+          </div>
+          
+
+        </div>
       </div>
     </div>
-    
-      <a href="https://hakuhuang.github.io/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-kOx6ZTOqhu4/XnC0tBBlp2I/AAAAAAAAASo/2KOTLCCC_Lsy0mx-Z2O3_RQzmMq50JTpgCLcBGAsYHQ/s640/IMG_9955.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
-        <h2 class="post-title">【书籍】Oasis / 6本英文传记电子书下载</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-17</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://hakuhuang.github.io/tag/m_O25coBYl/">
-                书籍
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/InX7tNJTx/">
-                Oasis
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/aLnQpgFPkG/">
-                Liam Gallagher
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/2S7tD0fNJ/">
-                音乐
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/">
-                资源
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://hakuhuang.github.io/tag/Ftcw6imstL/">
-                Noel Gallagher
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://hakuhuang.github.io/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
-        <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-Uv8PlEYTKoE/XnCgiKTCiVI/AAAAAAAAASc/MgsmPY1v1asMWFQ0cVzJGsXWzNMxueb8gCLcBGAsYHQ/s640/IMG_9947.JPG')">
-        </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-    <a href="https://hakuhuang.github.io/tag/QrhcMSJpR_/page/2" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">Life's Endless Corridors</div>
-  <div class="social-container">
-    
-      
-    
-      
-        <a href="https://twitter.com/hakuinside" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="https://weibo.com/7209366122" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hakuhuang.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script type="text/javascript">
+  //点击加载更多
+  jQuery(document).ready(function ($) {
+    //点击下一页的链接(即那个a标签)
+    $(' .btn-paginator').click(function () {
+      $this = $(this);
+      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+      var href = $this.attr('href'); //获取下一页的链接地址
+      if (href != undefined) { //如果地址存在
+        $.ajax({ //发起ajax请求
+          url: href,
+          //请求的地址就是下一页的链接
+          type: 'get',
+          //请求类型是get
+          error: function (request) {
+            //如果发生错误怎么处理
+          },
+          success: function (data) { //请求成功
+            $this.removeClass('loading').text('加载更多'); //移除loading属性
+            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
+            $('.card-list').append($res.fadeIn(
+              500)); //将数据加载加进posts-loop的标签中。
+            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
+            if (newhref != undefined) {
+              $('.btn-paginator').attr('href', newhref);
+            } else {
+              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
+            }
+          }
+        });
+      }
+      return false;
+    });
+  });
 </script>
 
+        	<div class="layout-footer">
 
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									<span>© 2020 </span>
+									<a href="https://hakuhuang.github.io" title="(It&#39;s Good) To Be Free">(It&#39;s Good) To Be Free</a>
+									<span class="px-2">⋅</span>
+									
+									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									<span class="footer-links-item">
+										<a href="https://twitter.com/hakuinside" target="_blank">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									
+									
+									
+									
+									<span class="footer-links-item">
+										<a href="https://www.douban.com/people/147869986/" target="_blank">
+											<i class="fa fa-douban" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									<span class="footer-links-item">
+										<a href="https://www.instagram.com/hakuhuang/" target="_blank">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									
+									
+									<span class="footer-links-item">
+										<a href="https://www.weibo.com/7209366122" target="_blank">
+											<i class="fa fa-weibo" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+	</div>
 
-  </body>
+	<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/main.js'></script>
+	
+    </div>
+</body>
+
 </html>
