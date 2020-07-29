@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://itsgoodtobefree.me</id>
     <title>(It&apos;s Good) To Be Free</title>
-    <updated>2020-07-28T15:14:40.807Z</updated>
+    <updated>2020-07-29T16:27:27.765Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://itsgoodtobefree.me"/>
     <link rel="self" href="https://itsgoodtobefree.me/atom.xml"/>
@@ -10,6 +10,100 @@
     <logo>https://itsgoodtobefree.me/images/avatar.png</logo>
     <icon>https://itsgoodtobefree.me/favicon.ico</icon>
     <rights>All rights reserved 2020, (It&apos;s Good) To Be Free</rights>
+    <entry>
+        <title type="html"><![CDATA[【笔记】如何辨别NG的吉他]]></title>
+        <id>https://itsgoodtobefree.me/post/bi-ji-ru-he-bian-bie-ng-de-ji-ta/</id>
+        <link href="https://itsgoodtobefree.me/post/bi-ji-ru-he-bian-bie-ng-de-ji-ta/">
+        </link>
+        <updated>2020-07-29T08:42:46.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="参考资料">参考资料</h3>
+<ul>
+<li><a href="https://www.noelgallaghersguitars.com/">博客 / Noel Gallagher's Guitar</a><br>
+外国粉丝建立的Noel Gallagher乐器考古小站</li>
+<li><a href="https://imomi.me/2011/08/noelgallagher/">【翻译】完全Noel Gallagher（OASIS）设备指南</a><br>
+这篇转自<a href="https://guitarplayer.wordpress.com/2008/06/14/the-complete-noel-gallagher-oasis-gear-guide/">外国网友博客guitarplayer</a>，翻译错误比较多，可以看一下原文参考</li>
+<li><a href="https://weibo.com/ttarticle/p/show?id=2309404375838123518189">微博@诺有缸bot翻译的《诺有缸的吉他之Epiphone篇》</a></li>
+<li><a href="https://weibo.com/ttarticle/p/show?id=2309404377049006490559">微博@诺有缸bot翻译的《诺有缸的吉他之Gibson篇》</a></li>
+</ul>
+<hr>
+<h3 id="前言扫盲">前言扫盲</h3>
+<p>近年来，Les Paul子型号的产品线主要可以分为以下三种：Standard（标准款）、Custom（订制款）、Studio（录音室款），简单按高级到廉价程度分大概是Custom&gt;Standard&gt;Studio。他们之间的区别在于做工用料，例如一些外观上的镶嵌、拾音器旋钮和木材之类的。目前市面上还有Traditional，Classic，Junior等型号。</p>
+<p>电吉他就算是同一品牌同一型号，不同年代生产设计的外观配置也会有所不同。</p>
+<hr>
+<h3 id="epiphone-les-paul">Epiphone Les Paul</h3>
+<blockquote>
+<p>使用时期：早期-1994<br>
+型号：Standard<br>
+颜色：Cherry Sunburst（又译：樱桃日落色/樱桃渐变色/番茄炒蛋色）</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/tumblr_inline_owng09EhTm1qzswpl_1280.png" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">1992年绿洲在Boardwalk排练</font></center>
+<br/>
+<figure data-type="image" tabindex="2"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/IMG_1503(20200729-193716).JPG" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">摄于1994年1月的早期演出</font></center>
+<br/>
+<figure data-type="image" tabindex="3"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/IMG_5903(20200608-175557).JPG" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">1993年，Noel在曼城的Out Of The Blue Studios创作首专的《Shakermaker》</font></center>
+<br/>
+<figure data-type="image" tabindex="4"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/epi.jpeg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">1993年，Noel在Monnow Valley Studios录制首专</font></center>
+<br/>
+<figure data-type="image" tabindex="5"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/EVUcIeOXkAATHUG.jpg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">《Supersonic》的单曲封面，钢琴左侧前方的这把</font></center>
+<br/>
+<figure data-type="image" tabindex="6"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/QQ%E6%88%AA%E5%9B%BE20200729201340.jpg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">《Supersonic》的MV中也用了这把琴</font></center>
+<br/>
+<p>Epiphone Les Paul Standard是Noel在绿洲早期演出最常使用的一把琴，因为当时他的积蓄只能承担得起这把低端型号。这把琴也是随后录制了专辑《Definitely Maybe》的吉他之一。</p>
+<p>Johnny Marr于2016年出版的自传《Set The Boy Free》中回忆了第一次见到Noel的场景——“Noel和大多数曼城的传奇能人志士一样，住在一个叫India House的黑色公寓里。我敲了门，当他让我进去时……我环顾了一下狭小的空间，Noel自豪地向我展示了他最值钱的两样东西：一把Epiphone吉他和一个大鱼缸。&quot;</p>
+<p>但随后，由于这把吉他现场演出时各种问题要调音很久，Johnny Marr便于1994年赠送了他一把自己的Gibson Les Paul（见下文）。原先的这把Epiphone Les Paul被Noel送给了一位熟识的朋友。</p>
+<hr>
+<h3 id="gibson-les-paul">Gibson Les Paul</h3>
+<blockquote>
+<p>使用时期：1994<br>
+型号：1960 Special （在1952 Gibson Les Paul Standard Goldtop的基础上生产）<br>
+颜色：Sunburst（又译：日落色）</p>
+</blockquote>
+<figure data-type="image" tabindex="7"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/bda2c4c0c466ac23963aebdcab9163c4.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/gettyimages-85336779-1024x1024.jpg" alt="" loading="lazy"></figure>
+<p>这把琴由Johnny Marr于1994年送给Noel。Noel用这把琴创作以及录制了《Live Forever》和《Slide Away》。《Live Forever》的MV中也可以看见这把琴的露面。</p>
+<p>同年绿洲在Newcastle演出时，Noel用这把琴砸了一位跑到舞台上闹事的粉丝，于是造成琴颈的损坏。</p>
+<p>这把和上面那把Epiphone Les Paul外形的区别，如果不是凭借琴头的标识我也不太看得出来。况且这把的照片很少，不知道是不是Noel同年砸坏没修所以没用过。</p>
+<hr>
+<h3 id="epiphone-sheraton">Epiphone Sheraton</h3>
+<blockquote>
+<p>使用时期：1996年著名的Maine Road演出，以及其余零散的几次<br>
+型号颜色：1993 Epiphone Nashville Series Sheraton（重新定制，上色为英国国旗图案）</p>
+</blockquote>
+<figure data-type="image" tabindex="9"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/oasis-maine-road-2-1461762961.jpg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">Maine Road第一夜</font></center>
+<br/>
+<figure data-type="image" tabindex="10"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/28361.png" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">Maine Road第二夜</font></center>
+<br/>
+<p>这把琴是Noel的前妻Meg Mattews送给他的礼物，在伦敦的吉他店Nightingale Guitars重新定制上色为英国国旗图案。虽然这把琴是大部分人听说NG的名字，脑中浮现的第一幅标志性画面，但其实本人只在很少的场合使用过。</p>
+<p>大部分Sheraton琴的特色，是具有Frequensator™拉弦板（frequensator tailpiece）和迷你双线圈拾音器（mini-humbuckers）；琴头处镶有Sheraton系列独有的传统藤蔓“生命之树”的图案；指板处镶嵌的白色部分由珍珠贝和鲍鱼壳制作，是个V字三角形的缺口。</p>
+<p>（注：Frequensator™拉弦板应用在Epiphone乐器上的历史最远可以追溯到上世纪30年代，这种拉弦板不仅给Sheraton吉他带来最长的延音，还带来准确的音准。迷你双线圈拾音器的声音比单线圈的更加丰满，比普通双线圈（普通Les Paul装载的拾音器）的声音细节更加丰富，带给乐手更广范围的音色可能性。）</p>
+<figure data-type="image" tabindex="11"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/t1n.jpg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">Sheraton的外观特色</font></center>
+<br/>
+<h4 id="注意">——注意！</h4>
+<p>市面上曾经发行过的同款Union Jack纪念琴有两款：</p>
+<ul>
+<li>Epiphone Sheraton Union Jack</li>
+</ul>
+<figure data-type="image" tabindex="12"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/s560209402725084130_p1272_i4_w1400.jpeg" alt="" loading="lazy"></figure>
+<p>于2014年发行的限量复刻版Epiphone Sheraton。拉弦板、拾音器和琴头都是复刻上文中介绍的Noel的琴。</p>
+<ul>
+<li>Epiphone Noel Gallagher Supernova</li>
+</ul>
+<figure data-type="image" tabindex="13"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/maxresdefault.jpg" alt="" loading="lazy"></figure>
+<center><font size=3><font color="#A6B1B8 ">油管上一位死忠博主集齐了其中四把</font></center>
+<br/>
+<p>于2005年发行的签名款琴其实并非同款Epiphone Sheraton，而是在<strong>Epiphone Riviera</strong>上改造的Epiphone Noel Gallagher Supernova系列，产自韩国。当年一共发行了五款颜色（黑檀色、日落色、樱桃红、曼城蓝、英国国旗）。</p>
+<p>Riviera琴最好判断的特色，应该就是指板镶嵌的白色图案是倾斜的平行四边形。但是和Sheraton相比，Riviera没有Frequensator™拉弦板，只有迷你双线圈拾音器。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【翻译】Noel＆Gem Heathen Chemistry时期采访 / Guitarist 2002年6月号]]></title>
         <id>https://itsgoodtobefree.me/post/guitarist-june-2002/</id>
@@ -982,98 +1076,6 @@ Lyonnnnnn建的电台，应该是网易云上最全的诺有缸Acoustic和Live�
 <li>如果觉得本站有用的话请扫描以下二维码支持</li>
 </ul>
 <figure data-type="image" tabindex="1"><img src="https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/IMG_0345(20200324-194053).JPG" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【多图杀猫】和散装绿洲的回忆]]></title>
-        <id>https://itsgoodtobefree.me/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/</id>
-        <link href="https://itsgoodtobefree.me/post/sui-gan-he-san-zhuang-lu-zhou-yi-ji-ge-wei-de-hui-yi/">
-        </link>
-        <updated>2020-03-21T13:52:20.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>干啥啥不行，追星第一名</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>干啥啥不行，追星第一名</p>
-</blockquote>
-<!-- more -->
-<ul>
-<li>
-<h3 id="170812-liam-gallaghershenzhen-bay-sports-center">170812 Liam Gallagher@Shenzhen Bay Sports Center</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-KTBFvqYheeQ/XnYhKmBZrJI/AAAAAAAAAXs/Q5T146bop9kEviacafufbIM-6RvX9iS5gCLcBGAsYHQ/s640/IMG_6369%252820180411-061636%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-ZFskWtd_pO4/XnYhK2XpbqI/AAAAAAAAAXw/gQyynF8cKDsm_vTMgtYOwb-F9_7wP7vbQCLcBGAsYHQ/s1600/IMG_6375.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-WdTkJ-4P0aQ/XnYhKChfWJI/AAAAAAAAAXo/wQpvYM5xzT0aT7D1XCSI25dNo_DvrZrpQCLcBGAsYHQ/s640/IMG_6276%252820191203-175809%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-83ctg6-YqYI/XnYhLPrZGvI/AAAAAAAAAX0/XzookdPrFVItXKz8k5vv9fmDH0q97x39ACLcBGAsYHQ/s640/IMG_6401%252820170814-171855%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-BUGy00Q2_0Q/XnYhNMyjMSI/AAAAAAAAAX8/LKrFOs6iKUMsw3JX60inK3zPCHpUPlVzQCLcBGAsYHQ/s640/IMG_6834.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-00_0TViMmb0/XnYhMNTUl3I/AAAAAAAAAX4/NZ1aa1SbhcEVIrMW4VrCWq9p0-QyTwWKACLcBGAsYHQ/s640/IMG_6663.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="180226-ridemacpherson-stadium-hk">180226 Ride@Macpherson Stadium HK</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-gJSNLxv3Kxw/XnYjNDqhR7I/AAAAAAAAAYw/riXL9QU_uY8KhGse9RsgQHHvsdXXfaErwCLcBGAsYHQ/s640/IMG_4676.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-yj9_aHGsdng/XnYjMxEDvEI/AAAAAAAAAYs/dn_U2nGfM7gPVbNNU79zDgLRpVviPiDPQCLcBGAsYHQ/s640/IMG_4669.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-gzHf9gplwhU/XnYjNDEyqDI/AAAAAAAAAY0/kWkVg3YcU7MEPMVhbhiM2gYwkXXtVHgAgCLcBGAsYHQ/s640/IMG_4677.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-_uRmTSzoDvY/XnYiiZyA7mI/AAAAAAAAAYU/I23X-KvSlNgj_NlGbLc4MVfQEnPKQwkPQCLcBGAsYHQ/s640/IMG_4225%252820181107-122031%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-_xnx412V05Y/XnYijuQjzaI/AAAAAAAAAYc/aRyl6Y2WDj88h-LwsloIvAxa5OVCqhemACLcBGAsYHQ/s640/IMG_4216%252820191111-135257%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-wra41aA0kAk/XnYii0zqliI/AAAAAAAAAYY/yahL1VC1Rv852Pc3DHCf4860pRlt19weACLcBGAsYHQ/s640/IMG_4214%252820191203-175805%2529.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="180818-nghfbsummer-sonic-osaka">180818 NGHFB@Summer Sonic Osaka</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-s00pjMwahc8/XnYkNytb8uI/AAAAAAAAAZI/jMALMjtW2zU6-CP_WFKmd3SWxeSZpxWGQCLcBGAsYHQ/s640/IMG_1256.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-uhRxGzibFBM/XnYkOrVZoQI/AAAAAAAAAZQ/vZhnRiw3wIgY9418Oss-q0-7ToE_-aD0wCLcBGAsYHQ/s640/IMG_1259%252820181201-031033%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-81Enr1Ew0xI/XnYkOpaT4LI/AAAAAAAAAZU/QK7THDe7RIAnMqX8IYeOspF3f_eyvN99wCLcBGAsYHQ/s640/IMG_1262%252820181231-105854%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-8KFC_0oP3G8/XnYkOIWG8BI/AAAAAAAAAZM/QcFAzNSbecod0sG8biF9flrQOunwtHE1QCLcBGAsYHQ/s640/FullSizeRender%25288%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-ltJiqCsjoEw/XnYkwb87wPI/AAAAAAAAAZs/wFaCZJhsuuYsIfGkJpXaBK_GcQg3dA7HwCLcBGAsYHQ/s640/FullSizeRender%25289%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-IZM_6jbJfWc/XnYkNpwsTVI/AAAAAAAAAZE/RuHuVR10Jgg_iL3VO_nPeBZBL8W3kV_fACLcBGAsYHQ/s640/FullSizeRender%252810%2529.jpg" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/--o_MJ2RHEJo/XnYkPOZWRcI/AAAAAAAAAZY/NhTjyP74P0cxE15Pr0TK8i11NE-cHXBuQCLcBGAsYHQ/s640/IMG_1291.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-pRXiYMZP7Fg/XnYlFuoDyaI/AAAAAAAAAZ4/AUCUiAMnKS8HeEHl4PprsbHY9gPqu7lQACLcBGAsYHQ/s640/IMG_1872.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="190519-nghfbseoul-olympic-hall">190519 NGHFB@Seoul Olympic Hall</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-C429xOBNX_4/XnYmXZpFL0I/AAAAAAAAAaM/AvSUihPbJ0ASRRY3-qnJIQ-NizCoagjLwCLcBGAsYHQ/s640/IMG_9346.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-fsr4Y9T47-k/XnYmXhRptUI/AAAAAAAAAaQ/y1I5nZ1LB44glvqPJ9WqTo1O1XKIYphggCLcBGAsYHQ/s640/IMG_9347.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-8y4ULjN0xoQ/XnYmXlnS4jI/AAAAAAAAAaU/9WLWytfnFiEXX3REg7zADymP5Sqm7CyagCLcBGAsYHQ/s640/IMG_9348.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-4xbK9vBziAw/XnYmZNRvylI/AAAAAAAAAaY/L98jmdIHXKo4oEAl4aSOg85ugVOIfxPHQCLcBGAsYHQ/s640/IMG_9352.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-JUKpBI2Tb04/XnYn0EfnMMI/AAAAAAAAAbI/B1imeAa1724bXpCeyDGaB2p3xSG4EZCYwCLcBGAsYHQ/s640/IMG_9361%252820190522-114942%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-7QEavfA6Q08/XnYmZYTIjxI/AAAAAAAAAac/Zo0K7baXXmApZT3N4BeOccL2YOy_BTV9ACLcBGAsYHQ/s640/IMG_9373.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-HvcH2ahXlE4/XnYmbDB-pWI/AAAAAAAAAak/YmcSrofpfsAPxbmAMHOouh2oTei8cO79ACLcBGAsYHQ/s640/IMG_9389%252820190519-210742%2529.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="190520-nghfbseoul-olympic-hall">190520 NGHFB@Seoul Olympic Hall</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-supXd5bJXHg/XnYoF_u8K1I/AAAAAAAAAbQ/MpGvAySH6oEQDZvdzTN44bxo95lQup2HgCLcBGAsYHQ/s640/IMG_9432.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-bp-vkt5vxmY/XnYoGMAQOCI/AAAAAAAAAbU/kF4ERS0c53YBMCFEiAS8gdRAdtaMklaDACLcBGAsYHQ/s640/IMG_9434%252820191127-100439%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-KSp76o4qE-c/XnYoHi-XF7I/AAAAAAAAAbc/BQaERtcw0yQYGTFcTRWQwnPMHOA4TBUdACLcBGAsYHQ/s640/IMG_9474.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-XrykooI8xew/XnYoH_Y379I/AAAAAAAAAbg/5Do-oAf0n18bZj9c0QZxhI_DP2pXIqldQCLcBGAsYHQ/s640/IMG_9475.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-nTQBfY4SmEY/XnYoF9RKyEI/AAAAAAAAAbM/MTKxOg7MU4gNabouF5OsDIXrKfoWxTtkQCLcBGAsYHQ/s640/IMG_9462.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-FCEuHAxbiUI/XnYoHdNNyHI/AAAAAAAAAbY/aFIRaD9S_M0bbmqz8uojGzzb-XRXPxCDACLcBGAsYHQ/s640/IMG_9471.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-_vbU72sBUo0/XnYoJRZtQ8I/AAAAAAAAAbo/BCQAU-7eEpweotIPYmbCESAxhdUi14NwgCLcBGAsYHQ/s640/IMG_9522.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-T2aoO-OI_D4/XnYoI85_0-I/AAAAAAAAAbk/E11o9_sz-VohTFCxAWFWHP222PiWRRgqgCLcBGAsYHQ/s640/IMG_9503.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="韩国场弱智repo">#韩国场弱智Repo</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-vu6YTqBlSnE/XnYqg2YP6fI/AAAAAAAAAcU/pV-lxCEdAs4cLQlMaveIRHm_6Fk2yJp5gCLcBGAsYHQ/s1600/IMG_9543.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-rA07zfJ6Od0/XnYqg9xkv6I/AAAAAAAAAcQ/SzIBoCW293gCVbwe1Nw4btitN0eDnt9jwCLcBGAsYHQ/s1600/IMG_9547.JPG" alt="" loading="lazy"></p>
-<ul>
-<li>
-<h3 id="19年底在香港百老汇看的supersonic特映">19年底在香港百老汇看的《Supersonic》特映</h3>
-</li>
-</ul>
-<p><img src="https://1.bp.blogspot.com/-LvusyLJKuV8/XnYuaOwnXNI/AAAAAAAAAc8/-sxL09PtBwYrP1wr9NAh6v2KCEhfe3zCgCLcBGAsYHQ/s640/%25E6%2595%25A3%25E8%25A3%2585%25E7%25BB%25BF%25E6%25B4%25B2IMG_1876%252820200314-151544%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-K_x2y4bInnw/XnYuZF8qGqI/AAAAAAAAAc0/ugj_jWjpBHY5-3-Gqsjn-KzWCgMVYTjMgCLcBGAsYHQ/s640/%25E6%2595%25A3%25E8%25A3%2585%25E7%25BB%25BF%25E6%25B4%25B2IMG_1885%252820191203-175807%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-8V8V336_vuE/XnYuZqI-s6I/AAAAAAAAAc4/kQxczqmuQyEoNysuoAAuGzpoQrBUV4yegCLcBGAsYHQ/s640/%25E6%2595%25A3%25E8%25A3%2585%25E7%25BB%25BF%25E6%25B4%25B2IMG_1917%252820191203-175807%2529.JPG" alt="" loading="lazy"><br>
-<img src="https://1.bp.blogspot.com/-qNamMaULgnQ/XnYuarWAbQI/AAAAAAAAAdA/O2WSt42-7DQCDyPVIG5b_jTgiFmbKf-EgCLcBGAsYHQ/s640/%25E6%2595%25A3%25E8%25A3%2585%25E7%25BB%25BF%25E6%25B4%25B2IMG_1920%252820200313-125327%2529.JPG" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
