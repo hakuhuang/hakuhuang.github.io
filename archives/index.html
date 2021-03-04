@@ -1,783 +1,629 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
-	<meta charset="UTF-8" />
-<title>(Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link type='text/css' rel='stylesheet' href='https://itsgoodtobefree.me/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>归档 | (Good) To Be Free</title>
 
-<script type="text/javascript" src='https://itsgoodtobefree.me/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1614879402885">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://itsgoodtobefree.me/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (Good) To Be Free
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu gt-a-link">
+                    必读
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1614879402885"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+        <div class="post-container">
+            <div class="post-detail gt-bg-theme-color-first">
+                <article class="gt-post-content">
+                    <h2 class="post-title">归档</h2>
+        
+
+<div class="archives-container">
+    
+        <h2 class="year gt-c-cotent-color-first">2020</h2>
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/noel-gallagher-reddit-2015/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-08-07&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【转载翻译】Noel回答Reddit网友提问 / 2015年5月
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/uncut-november-2006/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-08-02&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【转载翻译】Noel和Liam谈绿洲金曲背后的故事 / UNCUT 2006年11月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/i-d-noel-gallagher-interview-2017/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-31&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【转载翻译】“你走你的阳关道，我走我的独木桥“Noel Gallagher谈 Liam、剪刀和新专辑 / i-D 2017年11月 
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/guitarist-june-2002/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-28&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel＆Gem Heathen Chemistry时期采访 / Guitarist 2002年6月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/noel-gallagher-rodie-interview-1991/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-26&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher人生首个采访 / 1991年Inspiral Carpets时期
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/noel-gallagher-and-rachel-johnson/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-25&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher和首相鲍里斯的妹妹聊聊兄弟撕逼和恐怖的圣诞 / Sunday Times 2019年12月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/mojo-february-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-23&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher的复仇 / MOJO 2019年2月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/milk-april-2009/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-19&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher 09年绿洲香港巡演专访 / Milk 2009年4月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/q-magazine-december-2017/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】帝国的反击……Noel Gallagher的重生 / Q 2017年12月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/guitarist-july-2018/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-07-15&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Gem Archer：我总想在乐队里呆着！从未想过成为吉他独奏大师 / Guitarist 2018年7月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/bootleg-oasis-kick-a-hole-in-the-sky-320k/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-06-23&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【下载】Oasis /  Kick A Hole In The Sky / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/the-big-issue-november-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-06-03&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher：我才不把自己当回事哩…… / The Big Issue 2019年11月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/band-kaogu/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-04-18&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【指南】互联网考古过气乐队实用网站
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/noel-gallagher-on-sexual-assault/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-04-06&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【翻译】Noel Gallagher谈关于名人性侵案、女权和家庭
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/za-zhi-british-vogue-sara-macdonald/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-04-04&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【转载翻译】Sara MacDonald：特此声明… / British VOGUE 2020年5月号
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/top/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-24&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【置顶】浏览前必读
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/bootleg-nghfb-no-noel-no-life/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / No Noel, No Life / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/bootleg-oasis-the-boys-are-back-in-town/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】《Tales From the Middle of Nowhere》
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】Oasis / 6本英文传记电子书下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-16&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【随感】New Day Dawning / 写在Felt告别演出30周年
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-16&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【书籍】《FELT : Ballad of the Fan》 by JC Brouchard
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/kerrang-september-2019-green-day-the-secrets-out/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Kerrang! / September 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/q-magazine-august-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / August 2019 
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/uncut-february-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】UNCUT / February 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/q-magazine-january-2019/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / January 2019
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/q-magazine-august-2017/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【杂志】Q Magazine / August 2017
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/zi-ti-joy-division-and-new-order-qi-kuan-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】Joy Division &amp; New Order / 七款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/zi-ti-green-day-4-kuan-lu-ri-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】Green Day / 四款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://itsgoodtobefree.me/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2020-03-12&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            【字体】NGHFB / 两款字体下载
+                        </div>
+                    </a>
+                </article>
+            
+        
+    
+</div>
+
+        <div class="pagination-container">
+    
+    
+</div>
+
+    </article>
+</div>
+</div>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+                <a href="https://twitter.com/hakuinside" target="_blank">
+                    <i class="fab fa-twitter gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://weibo.com/7209366122" target="_blank">
+                    <i class="fab fa-weibo gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://itsgoodtobefree.me/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
 <script>
-    hljs.initHighlightingOnLoad();
+  hljs.initHighlightingOnLoad()
 </script>
-</head>
 
-<body>
-	<div class="layout theme-dark">
-		<div class="layout-header">
-
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-
-					<div class="navbar">
-
-						<div class="logo">
-							<a href="https://itsgoodtobefree.me">
-								<img class="logo"
-									src="https://itsgoodtobefree.me/media/images/site_avatar.png?v=1614879213523"
-									alt="">
-							</a>
-						</div>
-
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="归档"
-										href="https://hakuhuang.github.io/tags">归档</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="必读"
-										href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a>
-								</li>
-								
-							</ul>
-						</div>
-
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-
-
-
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
-
-									<form id="gridea-search-form" data-update="1614879213523" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</div>
-
+    </div>
 </div>
-		<div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="归档" href="https://hakuhuang.github.io/tags">归档</a></li>
-			
-			<li class="layout-collapse-item"><a title="必读" href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-		<div class="layout-content">
-			<div class="layout-content-main">
-				<div class="container">
-					<div class="row justify-content-lg-center">
-						<div class="col-12 col-lg-9">
-							<div class="layout-archive">
-								
-								
-
-								<div class="card">
-									<div class="card-header">
-										<div class="header-content">
-											<div class="title">2020</div>
-										</div>
-
-									</div>
-									<div class="card-body">
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/noel-gallagher-reddit-2015/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/nsi11hTI.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/noel-gallagher-reddit-2015/">【转载翻译】Noel回答Reddit网友提问 / 2015年5月</a>
-													<div class="time">2020-08-07</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/uncut-november-2006/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/57518310_1549533359EF2BCD83_11234.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/uncut-november-2006/">【转载翻译】Noel和Liam谈绿洲金曲背后的故事 / UNCUT 2006年11月号</a>
-													<div class="time">2020-08-02</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/i-d-noel-gallagher-interview-2017/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/1510315053754-NG-R16-FR8-Credit-Lawrence-Watson.jpeg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/i-d-noel-gallagher-interview-2017/">【转载翻译】“你走你的阳关道，我走我的独木桥“Noel Gallagher谈 Liam、剪刀和新专辑 / i-D 2017年11月 </a>
-													<div class="time">2020-07-31</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/guitarist-june-2002/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/Oasis-with-Eldorado-Guitar-Strap1%20(12).jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/guitarist-june-2002/">【翻译】Noel＆Gem Heathen Chemistry时期采访 / Guitarist 2002年6月号</a>
-													<div class="time">2020-07-28</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/noel-gallagher-rodie-interview-1991/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/DVtcRouXcAATtWy%20-%20%E5%89%AF%E6%9C%AC.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/noel-gallagher-rodie-interview-1991/">【翻译】Noel Gallagher人生首个采访 / 1991年Inspiral Carpets时期</a>
-													<div class="time">2020-07-26</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/noel-gallagher-and-rachel-johnson/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/_methode_sundaytimes_prod_web_bin_c6aa1d28-20e7-11ea-81b4-b78674dd3224.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/noel-gallagher-and-rachel-johnson/">【翻译】Noel Gallagher和首相鲍里斯的妹妹聊聊兄弟撕逼和恐怖的圣诞 / Sunday Times 2019年12月号</a>
-													<div class="time">2020-07-25</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/mojo-february-2019/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/2019-02-01_MOJ1O-2.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/mojo-february-2019/">【翻译】Noel Gallagher的复仇 / MOJO 2019年2月号</a>
-													<div class="time">2020-07-23</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/milk-april-2009/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/3446918727_e9ab267735_o.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/milk-april-2009/">【翻译】Noel Gallagher 09年绿洲香港巡演专访 / Milk 2009年4月号</a>
-													<div class="time">2020-07-19</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/q-magazine-december-2017/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/2017-12-01_Q_Magazine-1%20(2).jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/q-magazine-december-2017/">【翻译】帝国的反击……Noel Gallagher的重生 / Q 2017年12月号</a>
-													<div class="time">2020-07-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/guitarist-july-2018/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/wrKFmVzuSaPpVGVtaHksLi-1024-80.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/guitarist-july-2018/">【翻译】Gem Archer：我总想在乐队里呆着！从未想过成为吉他独奏大师 / Guitarist 2018年7月号</a>
-													<div class="time">2020-07-15</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/bootleg-oasis-kick-a-hole-in-the-sky-320k/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/Cover%20(2).jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/bootleg-oasis-kick-a-hole-in-the-sky-320k/">【下载】Oasis /  Kick A Hole In The Sky / 320K</a>
-													<div class="time">2020-06-23</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/the-big-issue-november-2019/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/IMG_9682.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/the-big-issue-november-2019/">【翻译】Noel Gallagher：我才不把自己当回事哩…… / The Big Issue 2019年11月号</a>
-													<div class="time">2020-06-03</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/band-kaogu/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(7).jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/band-kaogu/">【指南】互联网考古过气乐队实用网站</a>
-													<div class="time">2020-04-18</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/noel-gallagher-on-sexual-assault/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/IMG_1018.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/noel-gallagher-on-sexual-assault/">【翻译】Noel Gallagher谈关于名人性侵案、女权和家庭</a>
-													<div class="time">2020-04-06</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/za-zhi-british-vogue-sara-macdonald/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/British_Vogue_-_May_2020-1118.jpg')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/za-zhi-british-vogue-sara-macdonald/">【转载翻译】Sara MacDonald：特此声明… / British VOGUE 2020年5月号</a>
-													<div class="time">2020-04-04</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/top/" style="background-image: url('https://hakuhuang-1301568179.cos.ap-shenzhen-fsi.myqcloud.com/20200719140245.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/top/">【置顶】浏览前必读</a>
-													<div class="time">2020-03-24</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/" style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-shang/">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上）</a>
-													<div class="time">2020-03-21</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/" style="background-image: url('https://1.bp.blogspot.com/-Y_efrHblb_4/XnTvetiH8bI/AAAAAAAAAXQ/QWG6RiSg5uYtaCKxpUJfIaDufvoqgKcTwCLcBGAsYHQ/s640/sumner.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/yin-le-bernard-sumner-zi-chuan-zhai-fan-lesslesschapter-and-verse-new-order-joy-division-and-megreatergreater-xia/">【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（下）</a>
-													<div class="time">2020-03-21</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/" style="background-image: url('https://1.bp.blogspot.com/-yUTxIOarKiQ/XnDJtC7sLWI/AAAAAAAAAT4/6ReJf82ejX0Lo92jk2GckqbigVB2LLlvgCLcBGAsYHQ/s640/IMG_9967.JPEG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/bootleg-nghfb-noel-gallaghers-high-flying-koreans/">【BOOTLEG】NGHFB / Noel Gallagher&#39;s High Flying Koreans / 320K</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/bootleg-nghfb-no-noel-no-life/" style="background-image: url('https://1.bp.blogspot.com/-9tMIOrs8jyc/XnDIQMZBwdI/AAAAAAAAATk/Nm9WL5boNrch2nEjFm-peV1RPBwEOzz-wCLcBGAsYHQ/s640/IMG_9964.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/bootleg-nghfb-no-noel-no-life/">【BOOTLEG】NGHFB / No Noel, No Life / 320K</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/" style="background-image: url('https://1.bp.blogspot.com/-Ry9hB1OOPwI/XnDO2dDXJ8I/AAAAAAAAAUY/VZ9Wp4f0vGIPklW82DJTK1N0KFEPQArNwCLcBGAsYHQ/s640/IMG_9970%252820200317-212031%2529.JPEG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/bootleg-nghfb-summer-sonic-2018-tokyoosaka-complete-320k/">【BOOTLEG】NGHFB / Summer Sonic 2018 Tokyo+Osaka Complete / 320K</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/bootleg-oasis-the-boys-are-back-in-town/" style="background-image: url('https://1.bp.blogspot.com/-HPIPPDNybG4/XnC9GPJLApI/AAAAAAAAAS8/TkB1w1X_jc4N5Esy8HXujYUjC2l2fqZyQCLcBGAsYHQ/s640/IMG_9959.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/bootleg-oasis-the-boys-are-back-in-town/">【BOOTLEG】Oasis / The Boys Are Back In Town / FLAC</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/" style="background-image: url('https://1.bp.blogspot.com/-kOx6ZTOqhu4/XnC0tBBlp2I/AAAAAAAAASo/2KOTLCCC_Lsy0mx-Z2O3_RQzmMq50JTpgCLcBGAsYHQ/s640/IMG_9955.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/shu-ji-lesslesstale-from-the-middle-of-nowheregreatergreater/">【书籍】《Tales From the Middle of Nowhere》</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/" style="background-image: url('https://1.bp.blogspot.com/-Uv8PlEYTKoE/XnCgiKTCiVI/AAAAAAAAASc/MgsmPY1v1asMWFQ0cVzJGsXWzNMxueb8gCLcBGAsYHQ/s640/IMG_9947.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/shu-ji-6-ben-oasis-xiang-guan-ying-wen-chuan-ji-dian-zi-shu-xia-zai/">【书籍】Oasis / 6本英文传记电子书下载</a>
-													<div class="time">2020-03-17</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/" style="background-image: url('https://1.bp.blogspot.com/-XM_zCEQmEaU/Xm-pYUcvSfI/AAAAAAAAASI/qDY9Ip4UoQERz9BiJx2MK40LXDVJKFyhQCLcBGAsYHQ/s640/IMG_9895%252820200317-002831%2529.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">【随感】New Day Dawning / 写在Felt告别演出30周年</a>
-													<div class="time">2020-03-16</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/" style="background-image: url('https://1.bp.blogspot.com/-ix77SgM-3qs/Xm-Uv9PlHcI/AAAAAAAAAR8/Alg2uh3c_3Q1QLWgm3hfoqWzK-KsXuRkwCLcBGAsYHQ/s640/IMG_9891.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/shu-ji-lesslessfelt-balad-of-the-fangreatergreater-by-jc-brouchard/">【书籍】《FELT : Ballad of the Fan》 by JC Brouchard</a>
-													<div class="time">2020-03-16</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/kerrang-september-2019-green-day-the-secrets-out/" style="background-image: url('https://1.bp.blogspot.com/-thQfYpk1ir8/Xmz9TOUzmfI/AAAAAAAAAGs/ChDU1TiYa7kMN4zmg2jVTf1tx1xFMWHqwCLcBGAsYHQ/s640/IMG_9681.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/kerrang-september-2019-green-day-the-secrets-out/">【杂志】Kerrang! / September 2019</a>
-													<div class="time">2020-03-14</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/q-magazine-august-2019/" style="background-image: url('https://1.bp.blogspot.com/-UAleWisBLr8/Xm3sus3T9BI/AAAAAAAAAHA/sQuSViQy1HEsgrRvSIC0SM9X2RAz8UOnwCLcBGAsYHQ/s640/IMG_9720.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/q-magazine-august-2019/">【杂志】Q Magazine / August 2019 </a>
-													<div class="time">2020-03-14</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/uncut-february-2019/" style="background-image: url('https://1.bp.blogspot.com/-61cexHJAkAU/Xm-GC6jAhzI/AAAAAAAAARw/U4JNb9zaELQtf6i1TLr8D0avZ6UcsmOrwCLcBGAsYHQ/s640/IMG_9871.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/uncut-february-2019/">【杂志】UNCUT / February 2019</a>
-													<div class="time">2020-03-14</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/q-magazine-january-2019/" style="background-image: url('https://1.bp.blogspot.com/-RrFzKrtdhPk/Xm4b1iGjKiI/AAAAAAAAAMs/Hi20kwAhM5QeAV4tfXpRKtrS8W_xobI1ACLcBGAsYHQ/s640/IMG_9772.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/q-magazine-january-2019/">【杂志】Q Magazine / January 2019</a>
-													<div class="time">2020-03-14</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/q-magazine-august-2017/" style="background-image: url('https://1.bp.blogspot.com/-6_ip-4-3nqM/Xm4nMZhig9I/AAAAAAAAAOM/Vun5ccsPIzQfGQ4ZIvXv7z3LPC6JSvtEgCLcBGAsYHQ/s640/IMG_9790.JPG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/q-magazine-august-2017/">【杂志】Q Magazine / August 2017</a>
-													<div class="time">2020-03-14</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/zi-ti-joy-division-and-new-order-qi-kuan-zi-ti-xia-zai/" style="background-image: url('https://1.bp.blogspot.com/-TxPhF5seo2k/XnTO82QDWnI/AAAAAAAAAV8/cljV6wbck3oRgijLep3OdjlLHlHxsEFiACLcBGAsYHQ/s1600/%25E5%25BE%25AE%25E4%25BF%25A1%25E6%2588%25AA%25E5%259B%25BE_20200320221040.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/zi-ti-joy-division-and-new-order-qi-kuan-zi-ti-xia-zai/">【字体】Joy Division &amp; New Order / 七款字体下载</a>
-													<div class="time">2020-03-13</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/zi-ti-green-day-4-kuan-lu-ri-zi-ti-xia-zai/" style="background-image: url('https://1.bp.blogspot.com/-DW4FQRsTppQ/XnTIh7CozkI/AAAAAAAAAVQ/qvj_BozxAR8Vq4v14xv42g5opKpFENz_QCLcBGAsYHQ/s1600/%25E5%25BE%25AE%25E4%25BF%25A1%25E6%2588%25AA%25E5%259B%25BE_20200320214303.png')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/zi-ti-green-day-4-kuan-lu-ri-zi-ti-xia-zai/">【字体】Green Day / 四款字体下载</a>
-													<div class="time">2020-03-13</div>
-												</div>
-											</div>
-										</div>
-										
-										
-										
-										<div class="card-item">
-											<div class="thumb">
-												
-												<a href="https://itsgoodtobefree.me/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/" style="background-image: url('https://1.bp.blogspot.com/-sKrobKTwCvk/XnDckM-AOhI/AAAAAAAAAU0/DbKH-6CWo6oFRccjb-OXI5QBHVn0eBuQgCLcBGAsYHQ/s1600/IMG_9976.PNG')"></a>
-												
-											</div>
-											<div class="list-content">
-												<div class="list-body">
-													<a class="title" href="https://itsgoodtobefree.me/post/zi-ti-nghfb-liang-kuan-gao-fei-niao-zi-ti-xia-zai/">【字体】NGHFB / 两款字体下载</a>
-													<div class="time">2020-03-12</div>
-												</div>
-											</div>
-										</div>
-										
-										
-									</div>
-								</div>
-								
-							</div>
-
-							<div class="layout-paginator">
-								<div class="paginator row">
-									<div class="col-6">
-										
-										<a class="btn disabled btn-paginator width-100">上一页</a>
-										
-									</div>
-									<div class="col-6">
-										
-										<a class="btn disabled btn-paginator width-100">下一页</a>
-										
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-			<div class="layout-footer">
-
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									<span>© 2020 </span>
-									<a href="https://itsgoodtobefree.me" title="(Good) To Be Free">(Good) To Be Free</a>
-									<span class="px-2">⋅</span>
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									<span class="footer-links-item">
-										<a href="https://twitter.com/hakuinside" target="_blank">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.douban.com/people/147869986/" target="_blank">
-											<i class="fa fa-douban" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.instagram.com/hakuhuang/" target="_blank">
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.weibo.com/7209366122" target="_blank">
-											<i class="fa fa-weibo" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script type="text/javascript" src='https://itsgoodtobefree.me/media/scripts/main.js'></script>
-	
-	</div>
 </body>
-
 </html>
