@@ -1,229 +1,255 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-<title>(It&#39;s Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link type='text/css' rel='stylesheet' href='https://hakuhuang.github.io/styles/main.css' media='screen' />
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>搜索 | (It&#39;s Good) To Be Free</title>
 
-<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/jquery.js'></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1614878074533">
 
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
-    <script src="/media/search/fuse.js"></script>
-    <script src="/media/search/ejs.min.js"></script>
-    <script src="/media/search/gridea-search.js"></script>
-    <script src="/media/search/result.ejs" type="text/ejs"></script>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://itsgoodtobefree.me/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.0/dist/fuse.basic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.3/ejs.min.js"></script>
+    <script src="https://itsgoodtobefree.me/media/gridea-search/gridea-search.js"></script>
+    <script src="https://itsgoodtobefree.me/media/gridea-search/result-template.ejs" type="text/ejs"></script>
 </head>
 
 <body>
-    <div class="layout theme-dark">
-        <div class="layout-header">
+    <style>
+        .searched-keyword {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+    <div class="main gt-bg-theme-color-first">
+        <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
 
-	<div class="layout-header-main">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
 
-					<div class="navbar">
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
 
-						<div class="logo">
-							<a href="https://hakuhuang.github.io">
-								<img class="logo"
-									src="https://hakuhuang.github.io/media/images/site_avatar.png?v=1592915073527"
-									alt="">
-							</a>
-						</div>
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
 
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="归档"
-										href="https://hakuhuang.github.io/tags">归档</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="必读"
-										href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a>
-								</li>
-								
-							</ul>
-						</div>
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
 
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
 
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
 
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
 
-									<form id="gridea-search-form" data-update="1592915073527" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
 
-								</div>
-							</div>
-						</div>
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
 
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</div>
-
-</div>
-        <div class="layout-collapse d-md-none">
-	<div class="layout-collapse-main">
-		<ul class="layout-collapse-list">
-			
-			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
-			
-			<li class="layout-collapse-item"><a title="归档" href="https://hakuhuang.github.io/tags">归档</a></li>
-			
-			<li class="layout-collapse-item"><a title="必读" href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying">必读</a></li>
-			
-
-		</ul>
-	</div>
-</div>
-
-        <div class="layout-content">
-            <div class="layout-content-main">
-                <div class="container">
-                    <div class="row justify-content-lg-center">
-                        <div class="col-12 col-lg-9">
-                            <div id="gridea-search-result" class="layout-archive">
-
-                                <div class="card searching">
-                                    <div class="card-header">
-                                        <div class="header-content">
-                                            <div class="title">搜索中......</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card no-result" style="display:none">
-                                    <div class="card-header">
-                                        <div class="header-content">
-                                            <div class="title">未搜索到相关文章</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (It&#39;s Good) To Be Free
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu gt-a-link">
+                    必读
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1614878074533"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+        <div id="gridea-search-result" data-update="1614878074533">
+            <div class="searching" style="font-size: 18px; margin-top: 50px;">
+                <i class="fa fa-sync-alt fa-spin"></i>&nbsp;&nbsp;搜索中......
+                <br><br>
+                <span style="font-size: 65%; color: #aaa">第一次搜索可能需要耗费较长时间构建索引，请耐心等待...</span>
+            </div>
+            <div class="no-result" style="display:none; font-size: 20px; margin-top: 50px;">
+                <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;未搜索到相关文章，请更换关键词
             </div>
         </div>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+                <a href="https://twitter.com/hakuinside" target="_blank">
+                    <i class="fab fa-twitter gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://weibo.com/7209366122" target="_blank">
+                    <i class="fab fa-weibo gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://itsgoodtobefree.me/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
-        	<div class="layout-footer">
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									<span>© 2020 </span>
-									<a href="https://hakuhuang.github.io" title="(It&#39;s Good) To Be Free">(It&#39;s Good) To Be Free</a>
-									<span class="px-2">⋅</span>
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									<span class="footer-links-item">
-										<a href="https://twitter.com/hakuinside" target="_blank">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.douban.com/people/147869986/" target="_blank">
-											<i class="fa fa-douban" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.instagram.com/hakuhuang/" target="_blank">
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-									
-									<span class="footer-links-item">
-										<a href="https://www.weibo.com/7209366122" target="_blank">
-											<i class="fa fa-weibo" aria-hidden="true"></i>
-										</a>
-									</span>
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<script type="text/javascript" src='https://hakuhuang.github.io/media/scripts/main.js'></script>
-	
     </div>
 </body>
 

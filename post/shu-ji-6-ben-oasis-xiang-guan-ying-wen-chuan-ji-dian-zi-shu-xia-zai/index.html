@@ -1,135 +1,233 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>【书籍】Oasis / 6本英文传记电子书下载 | (It&#39;s Good) To Be Free</title>
-<meta name="description" content="Life&#39;s Endless Corridors">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1614878074533">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1614876749494">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://itsgoodtobefree.me/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
 
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
 
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
 
- <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://itsgoodtobefree.me">
-        <img class="avatar" src="https://itsgoodtobefree.me/images/avatar.png?v=1614876749494" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://itsgoodtobefree.me">
-        <h1 class="site-title">(It&#39;s Good) To Be Free</h1>
-      </a>
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            (It&#39;s Good) To Be Free
+        </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/tags" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu purple-link">
-            必读
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://1.bp.blogspot.com/-Uv8PlEYTKoE/XnCgiKTCiVI/AAAAAAAAASc/MgsmPY1v1asMWFQ0cVzJGsXWzNMxueb8gCLcBGAsYHQ/s640/IMG_9947.JPG')">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
             </div>
-          
-          <h2 class="post-title">【书籍】Oasis / 6本英文传记电子书下载</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-03-17</span>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
+            <div class="nav-item">
                 
-                  <a href="https://itsgoodtobefree.me/tag/m_O25coBYl/">
-                    书籍
-                    
-                      ，
-                    
-                  </a>
+                <a href="https://hakuhuang.github.io/tags" class="menu gt-a-link">
+                    归档
+                </a>
                 
-                  <a href="https://itsgoodtobefree.me/tag/InX7tNJTx/">
-                    Oasis
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://itsgoodtobefree.me/tag/aLnQpgFPkG/">
-                    Liam Gallagher
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://itsgoodtobefree.me/tag/2S7tD0fNJ/">
-                    音乐
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://itsgoodtobefree.me/tag/QrhcMSJpR_/">
-                    资源
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://itsgoodtobefree.me/tag/Ftcw6imstL/">
-                    Noel Gallagher
-                    
-                  </a>
-                
-              </span>
+            </div>
             
-          </div>
-          <div class="post-content">
-            <ul>
+            <div class="nav-item">
+                
+                <a href="https://hakuhuang.github.io/post/zhi-ding-huan-ying-huan-ying-huan-ying" class="menu gt-a-link">
+                    必读
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1614878074533"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    【书籍】Oasis / 6本英文传记电子书下载
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-03-17 ·
+                    </time>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/m_O25coBYl/" class="post-tags">
+                            # 书籍
+                        </a>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/InX7tNJTx/" class="post-tags">
+                            # Oasis
+                        </a>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/aLnQpgFPkG/" class="post-tags">
+                            # Liam Gallagher
+                        </a>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/2S7tD0fNJ/" class="post-tags">
+                            # 音乐
+                        </a>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/QrhcMSJpR_/" class="post-tags">
+                            # 资源
+                        </a>
+                    
+                        <a href="https://itsgoodtobefree.me/tag/Ftcw6imstL/" class="post-tags">
+                            # Noel Gallagher
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <ul>
 <li><a href="https://pan.baidu.com/s/1_pTZ_2yzydm8gV2wokTtiQ">百度网盘</a><br>
 提取码：9n4l</li>
 </ul>
@@ -168,74 +266,91 @@
 <br/>
 <p><a href="https://www.weibo.com/3175713934/IcdB7jeyo">*转载自微博用户@鱼雷软糖</a></p>
 
-          </div>
+                </div>
+            </article>
         </div>
 
         
-          <div class="next-post">
-            <a class="purple-link" href="https://itsgoodtobefree.me/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/">
-              <h3 class="post-title">
-                下一篇：【随感】New Day Dawning / 写在Felt告别演出30周年
-              </h3>
-            </a>
-          </div>
-          
-      </div>
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://itsgoodtobefree.me/post/yin-le-new-day-dawning-xie-zai-felt-gao-bie-yan-chu-30-zhou-nian/" class="post-title gt-a-link">
+                    【随感】New Day Dawning / 写在Felt告别演出30周年
+                </a>
+            </div>
+        
 
-      
+        
 
-<div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'Cu95WDyGpakhbGcr84SegjMM-gzGzoHsz',
-            appKey: 'Fpm144bxVsJnT3UyMpBdU4VU'
-        })
-    </script>
+        
 
-      <div class="site-footer">
-  <div class="slogan">Life's Endless Corridors</div>
-  <div class="social-container">
-    
-      
-    
-      
-        <a href="https://twitter.com/hakuinside" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="https://weibo.com/7209366122" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://itsgoodtobefree.me/atom.xml" target="_blank">RSS</a>
-</div>
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
 
 
-    </div>
-    <script type="application/javascript">
+	<div id="vcomments"></div>
 
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: '',
+		appKey: '',
+		avatar: '',
+		pageSize: 5,
+		recordIp: false,
+		placeholder: 'Just Go Go',
+		visitor: false,
+	});
 </script>
 
+        
 
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Life's Endless Corridors</div>
+    <div class="social-container">
+        
+            
+        
+            
+                <a href="https://twitter.com/hakuinside" target="_blank">
+                    <i class="fab fa-twitter gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://weibo.com/7209366122" target="_blank">
+                    <i class="fab fa-weibo gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://itsgoodtobefree.me/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-  </body>
+    </div>
+</div>
+</body>
 </html>
