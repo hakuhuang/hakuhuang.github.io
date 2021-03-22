@@ -6,7 +6,7 @@
 
 <title>【音乐】Bernard Sumner自传摘翻《Chapter and Verse: New Order, Joy Division and Me》（上） | (Good) To Be Free</title>
 
-<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1615617827088">
+<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1616432234198">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://itsgoodtobefree.me/styles/main.css">
@@ -37,101 +37,7 @@
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <style>
-    /* 导航栏样式 */
-    .navbar {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar-brand {
-        display: inline-block;
-        padding-top: 0.3125rem;
-        padding-bottom: 0.3125rem;
-        margin-right: 1rem;
-        font-size: 1.25rem;
-        line-height: inherit;
-        white-space: nowrap;
-    }
-
-    .navbar-brand:hover,
-    .navbar-brand:focus {
-        text-decoration: none;
-    }
-
-    .navbar-nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-
-    .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .navbar-toggler {
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid transparent;
-        border-radius: 0.25rem;
-    }
-
-    .navbar-toggler:hover,
-    .navbar-toggler:focus {
-        text-decoration: none;
-    }
-
-    @media (min-width: 992px) {
-        .navbar-expand-lg {
-            -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-            -ms-flex-pack: start;
-            justify-content: flex-start;
-        }
-
-        .navbar-expand-lg .navbar-nav {
-            -ms-flex-direction: row;
-            flex-direction: row;
-        }
-
-        .navbar-expand-lg .navbar-collapse {
-            display: -ms-flexbox !important;
-            display: flex !important;
-            -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-        }
-
-        .navbar-expand-lg .navbar-toggler {
-            display: none;
-        }
-    }
-
-    @media (max-width: 991px) {
-        #navbarSupportedContent {
-            display: none;
-        }
-    }
-</style>
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -139,7 +45,7 @@
         </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
         <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -163,8 +69,8 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1615617827088"
-                action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1616432234198"
+                action="/search/">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -173,7 +79,7 @@
 </nav>
 <script>
     /* 移动端导航栏展开/收起切换 */
-    document.getElementById('changeNavbar').onclick = function () {
+    document.getElementById('changeNavbar').onclick = () => {
         var element = document.getElementById('navbarSupportedContent');
         if (element.style.display === 'none' || element.style.display === '') {
             element.style.display = 'block';
@@ -465,7 +371,7 @@
 </div>
 
 <script>
-  hljs.initHighlightingOnLoad()
+  hljs.highlightAll()
 </script>
 
     </div>

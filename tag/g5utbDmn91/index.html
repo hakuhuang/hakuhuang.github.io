@@ -6,7 +6,7 @@
 
 <title>杂志 | (Good) To Be Free</title>
 
-<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1615617827088">
+<link rel="shortcut icon" href="https://itsgoodtobefree.me/favicon.ico?v=1616432234198">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://itsgoodtobefree.me/styles/main.css">
@@ -37,101 +37,7 @@
 <body>
 <div class="main gt-bg-theme-color-first">
     <div class="main-content">
-        <style>
-    /* 导航栏样式 */
-    .navbar {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar-brand {
-        display: inline-block;
-        padding-top: 0.3125rem;
-        padding-bottom: 0.3125rem;
-        margin-right: 1rem;
-        font-size: 1.25rem;
-        line-height: inherit;
-        white-space: nowrap;
-    }
-
-    .navbar-brand:hover,
-    .navbar-brand:focus {
-        text-decoration: none;
-    }
-
-    .navbar-nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-
-    .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .navbar-toggler {
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid transparent;
-        border-radius: 0.25rem;
-    }
-
-    .navbar-toggler:hover,
-    .navbar-toggler:focus {
-        text-decoration: none;
-    }
-
-    @media (min-width: 992px) {
-        .navbar-expand-lg {
-            -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-            -ms-flex-pack: start;
-            justify-content: flex-start;
-        }
-
-        .navbar-expand-lg .navbar-nav {
-            -ms-flex-direction: row;
-            flex-direction: row;
-        }
-
-        .navbar-expand-lg .navbar-collapse {
-            display: -ms-flexbox !important;
-            display: flex !important;
-            -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-        }
-
-        .navbar-expand-lg .navbar-toggler {
-            display: none;
-        }
-    }
-
-    @media (max-width: 991px) {
-        #navbarSupportedContent {
-            display: none;
-        }
-    }
-</style>
-<nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -139,7 +45,7 @@
         </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
         <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -163,8 +69,8 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1615617827088"
-                action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1616432234198"
+                action="/search/">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -173,7 +79,7 @@
 </nav>
 <script>
     /* 移动端导航栏展开/收起切换 */
-    document.getElementById('changeNavbar').onclick = function () {
+    document.getElementById('changeNavbar').onclick = () => {
         var element = document.getElementById('navbarSupportedContent');
         if (element.style.display === 'none' || element.style.display === '') {
             element.style.display = 'block';
@@ -199,9 +105,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>以及四篇音乐人/爱好者的演出Repo</p>
-</blockquote>
+                        
+以及四篇音乐人/爱好者的演出Repo
+
 
                     </div>
                     <div class="post-info">
@@ -243,9 +149,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>乐队老大Noel Gallagher和新人Gem Archer想让整个世界都知道他们的初心仍然如一……</p>
-</blockquote>
+                        
+乐队老大Noel Gallagher和新人Gem Archer想让整个世界都知道他们的初心仍然如一……
+
 
                     </div>
                     <div class="post-info">
@@ -295,9 +201,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>“什么重组绿洲啊Liam的，我宁可去街头乞讨卖艺！”</p>
-</blockquote>
+                        
+“什么重组绿洲啊Liam的，我宁可去街头乞讨卖艺！”
+
 
                     </div>
                     <div class="post-info">
@@ -388,9 +294,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>“我竭尽所能像只雄鹰般翱翔，却总被要求回应一只普通鸽子的胡言乱语。 ”</p>
-</blockquote>
+                        
+“我竭尽所能像只雄鹰般翱翔，却总被要求回应一只普通鸽子的胡言乱语。 ”
+
 
                     </div>
                     <div class="post-info">
@@ -436,9 +342,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>关于鲍里斯、布莱尔、脱欧和Liam——Noel Gallagher的巧言妙语</p>
-</blockquote>
+                        
+关于鲍里斯、布莱尔、脱欧和Liam——Noel Gallagher的巧言妙语
+
 
                     </div>
                     <div class="post-info">
@@ -480,9 +386,9 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>作为Noel Gallagher的妻子，Sara MacDonald一直处于Oasis成功、动荡和Twitter战争的漩涡中心。现在，她有自己的故事要讲。</p>
-</blockquote>
+                        
+作为Noel Gallagher的妻子，Sara MacDonald一直处于Oasis成功、动荡和Twitter战争的漩涡中心。现在，她有自己的故事要讲。
+
 
                     </div>
                     <div class="post-info">
@@ -528,10 +434,10 @@
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>The Secrets Out...<br>
-Green Day reveals all about their new album</p>
-</blockquote>
+                        
+The Secrets Out...
+Green Day reveals all about their new album
+
 
                     </div>
                     <div class="post-info">
@@ -573,9 +479,9 @@ Green Day reveals all about their new album</p>
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>The Chief's Rain Dance</p>
-</blockquote>
+                        
+The Chief's Rain Dance
+
 
                     </div>
                     <div class="post-info">
@@ -617,9 +523,9 @@ Green Day reveals all about their new album</p>
                         </a>
                     </div>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <blockquote>
-<p>The First Temptation of New Order</p>
-</blockquote>
+                        
+The First Temptation of New Order
+
 
                     </div>
                     <div class="post-info">
@@ -696,7 +602,7 @@ Green Day reveals all about their new album</p>
 </div>
 
 <script>
-  hljs.initHighlightingOnLoad()
+  hljs.highlightAll()
 </script>
 
     </div>
